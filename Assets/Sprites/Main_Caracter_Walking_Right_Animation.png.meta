@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 967027c9ec7f54043840029779b257f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1105603342886463608
+    second: Main_Caracter_Walking_Right_Animation_0
+  - first:
+      213: 7377943577516067009
+    second: Main_Caracter_Walking_Right_Animation_1
+  - first:
+      213: -1299685456639509283
+    second: Main_Caracter_Walking_Right_Animation_2
+  - first:
+      213: -1046875519246342892
+    second: Main_Caracter_Walking_Right_Animation_3
+  - first:
+      213: -8388632329524899736
+    second: Main_Caracter_Walking_Right_Animation_4
+  - first:
+      213: -2401888411906642143
+    second: Main_Caracter_Walking_Right_Animation_5
+  - first:
+      213: 3367393762190899130
+    second: Main_Caracter_Walking_Right_Animation_6
+  - first:
+      213: 2392076237111276064
+    second: Main_Caracter_Walking_Right_Animation_7
+  - first:
+      213: 8509181767487412640
+    second: Main_Caracter_Walking_Right_Animation_8
+  - first:
+      213: 5409954738844537418
+    second: Main_Caracter_Walking_Right_Animation_9
+  - first:
+      213: -4772883636206772110
+    second: Main_Caracter_Walking_Right_Animation_10
+  - first:
+      213: 6565266254271494562
+    second: Main_Caracter_Walking_Right_Animation_11
+  - first:
+      213: -3171925688765343350
+    second: Main_Caracter_Walking_Right_Animation_12
+  - first:
+      213: 3558959746865812900
+    second: Main_Caracter_Walking_Right_Animation_13
+  - first:
+      213: 8147608375536393337
+    second: Main_Caracter_Walking_Right_Animation_14
+  - first:
+      213: -6260089354932350938
+    second: Main_Caracter_Walking_Right_Animation_15
+  - first:
+      213: -1583380583193345542
+    second: Main_Caracter_Walking_Right_Animation_16
+  - first:
+      213: 5726215165586189199
+    second: Main_Caracter_Walking_Right_Animation_17
+  - first:
+      213: -977059422549671345
+    second: Main_Caracter_Walking_Right_Animation_18
+  - first:
+      213: -1088489618779555555
+    second: Main_Caracter_Walking_Right_Animation_19
+  - first:
+      213: 5698512329338144126
+    second: Main_Caracter_Walking_Right_Animation_20
+  - first:
+      213: -504246955940247932
+    second: Main_Caracter_Walking_Right_Animation_21
+  - first:
+      213: -6463611185380685102
+    second: Main_Caracter_Walking_Right_Animation_22
+  - first:
+      213: -4220188932689347133
+    second: Main_Caracter_Walking_Right_Animation_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 185
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8786b33f164e75f00800000000000000
+      internalID: 1105603342886463608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c848bef798b36660800000000000000
+      internalID: 7377943577516067009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcb24596f696fde0800000000000000
+      internalID: -1299685456639509283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2
+        width: 186
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415e4470340c871f0800000000000000
+      internalID: -1046875519246342892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8609f475757959b80800000000000000
+      internalID: -8388632329524899736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 186
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f6d221737caaed0800000000000000
+      internalID: -2401888411906642143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7314619c26bbe20800000000000000
+      internalID: 3367393762190899130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022bba4f9ac523120800000000000000
+      internalID: 2392076237111276064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a95154ebbfa61670800000000000000
+      internalID: 8509181767487412640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4215cbfb25041b40800000000000000
+      internalID: 5409954738844537418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270ee95ee9f43cdb0800000000000000
+      internalID: -4772883636206772110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a936bdbfd28c1b50800000000000000
+      internalID: 6565266254271494562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a899433446e0bf3d0800000000000000
+      internalID: -3171925688765343350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5d9d99807f36130800000000000000
+      internalID: 3558959746865812900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c18d056ae121170800000000000000
+      internalID: 8147608375536393337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6209d0926e1bf19a0800000000000000
+      internalID: -6260089354932350938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1828aafb3b60ae0800000000000000
+      internalID: -1583380583193345542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b2834ba5a977f40800000000000000
+      internalID: 5726215165586189199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f428a72c1a9c072f0800000000000000
+      internalID: -977059422549671345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19b1f27578e4e0f0800000000000000
+      internalID: -1088489618779555555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 4013
+        y: 2
+        width: 187
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75426285ce251f40800000000000000
+      internalID: 5698512329338144126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 4222
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4860c10b01e8009f0800000000000000
+      internalID: -504246955940247932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 4419
+        y: 0
+        width: 187
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da84216fd3ac46a0800000000000000
+      internalID: -6463611185380685102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Caracter_Walking_Right_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 4621
+        y: 0
+        width: 185
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd34067680ee65c0800000000000000
+      internalID: -4220188932689347133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Main_Caracter_Walking_Right_Animation_0: 1105603342886463608
+      Main_Caracter_Walking_Right_Animation_1: 7377943577516067009
+      Main_Caracter_Walking_Right_Animation_10: -4772883636206772110
+      Main_Caracter_Walking_Right_Animation_11: 6565266254271494562
+      Main_Caracter_Walking_Right_Animation_12: -3171925688765343350
+      Main_Caracter_Walking_Right_Animation_13: 3558959746865812900
+      Main_Caracter_Walking_Right_Animation_14: 8147608375536393337
+      Main_Caracter_Walking_Right_Animation_15: -6260089354932350938
+      Main_Caracter_Walking_Right_Animation_16: -1583380583193345542
+      Main_Caracter_Walking_Right_Animation_17: 5726215165586189199
+      Main_Caracter_Walking_Right_Animation_18: -977059422549671345
+      Main_Caracter_Walking_Right_Animation_19: -1088489618779555555
+      Main_Caracter_Walking_Right_Animation_2: -1299685456639509283
+      Main_Caracter_Walking_Right_Animation_20: 5698512329338144126
+      Main_Caracter_Walking_Right_Animation_21: -504246955940247932
+      Main_Caracter_Walking_Right_Animation_22: -6463611185380685102
+      Main_Caracter_Walking_Right_Animation_23: -4220188932689347133
+      Main_Caracter_Walking_Right_Animation_3: -1046875519246342892
+      Main_Caracter_Walking_Right_Animation_4: -8388632329524899736
+      Main_Caracter_Walking_Right_Animation_5: -2401888411906642143
+      Main_Caracter_Walking_Right_Animation_6: 3367393762190899130
+      Main_Caracter_Walking_Right_Animation_7: 2392076237111276064
+      Main_Caracter_Walking_Right_Animation_8: 8509181767487412640
+      Main_Caracter_Walking_Right_Animation_9: 5409954738844537418
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

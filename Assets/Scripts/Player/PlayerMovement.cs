@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 3f;
-
+    [SerializeField] private Animator _animator;
+    
     Rigidbody2D rb;
     InputSystem_Actions controls;
     Vector2 moveInput;
