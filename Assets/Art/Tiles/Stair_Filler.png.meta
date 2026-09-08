@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7ffbd22e7ec26fa43849ab0223bf9dcf
+guid: 97a045cf2e9fc384c8375ec8a5ab5f41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1064043090468857032
-    second: Tile_1x1 brown_0
+      213: -7466083142291058064
+    second: Stair_Filler_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile_1x1 brown_0
+      name: Stair_Filler_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 128
+        height: 192
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83b15ee5272cb31f0800000000000000
-      internalID: -1064043090468857032
+      spriteID: 072953860f4236890800000000000000
+      internalID: -7466083142291058064
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 04fec4198deacb54b8c48ce6d04d97ea
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tile_1x1 brown_0: -1064043090468857032
+      Stair_Filler_0: -7466083142291058064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
