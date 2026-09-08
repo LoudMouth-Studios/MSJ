@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9cee1fc6143813940af0f65cdbbd7a5b
+guid: 24fb1bf14d64ce94cb77b6d85d28a036
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3927377119562257705
-    second: Assets_Stand_0
+      213: -5179421385504480250
+    second: Stand_Diamond_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Assets_Stand_0
+      name: Stand_Diamond_2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7daae7161572f79c0800000000000000
-      internalID: -3927377119562257705
+      spriteID: 604a1fe01bffe18b0800000000000000
+      internalID: -5179421385504480250
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9b63b13070357ff48b3356c1d0694eae
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Assets_Stand_0: -3927377119562257705
+      Stand_Diamond_2_0: -5179421385504480250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
