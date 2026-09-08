@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     InputSystem_Actions controls;
     Vector2 moveInput;
     string lastDirection = "down";
+    string currentAnimation;
 
     void Awake()
     {
@@ -63,13 +64,13 @@ public class PlayerMovement : MonoBehaviour
         if (moveInput == Vector2.zero)
         {
             if (lastDirection == "left")
-                _animator.Play("Idle_left");
+                PlayAnimation("Idle_left");
             else if (lastDirection == "right")
-                _animator.Play("Idle_right");
+                PlayAnimation("Idle_right");
             else if (lastDirection == "up")
-                _animator.Play("Idle_up");
+                PlayAnimation("Idle_up");
             else
-                _animator.Play("Idle");
+                PlayAnimation("Idle");
 
             return;
         }
@@ -79,12 +80,12 @@ public class PlayerMovement : MonoBehaviour
             if (moveInput.x < 0)
             {
                 lastDirection = "left";
-                _animator.Play("Run_left");
+                PlayAnimation("Run_left");
             }
             else if (moveInput.x > 0)
             {
                 lastDirection = "right";
-                _animator.Play("Run_Right");
+                PlayAnimation("Run_Right");
             }
         }
         else
@@ -92,13 +93,22 @@ public class PlayerMovement : MonoBehaviour
             if (moveInput.y > 0)
             {
                 lastDirection = "up";
-                _animator.Play("Run_up");
+                PlayAnimation("Run_up");
             }
             else if (moveInput.y < 0)
             {
                 lastDirection = "down";
-                _animator.Play("Run_down");
+                PlayAnimation("Run_down");
             }
         }
+    }
+
+    void PlayAnimation(string stateName)
+    {
+        if (currentAnimation == stateName)
+            return;
+
+        _animator.Play(stateName);
+        currentAnimation = stateName;
     }
 }
