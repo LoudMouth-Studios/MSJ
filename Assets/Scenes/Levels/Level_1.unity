@@ -20360,7 +20360,6 @@ GameObject:
   - component: {fileID: 1938651370}
   - component: {fileID: 1938651369}
   - component: {fileID: 1938651368}
-  - component: {fileID: 1938651373}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -20542,21 +20541,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1938651373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938651366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a08ea16d1159044ae5e019e5dabbd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerFloor
-  collisionBottom: {fileID: 1420532353}
-  collisionTop: {fileID: 1482340051}
-  playerHeight: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
