@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8fd92ddaa425ca04299856b190b8908f
+guid: c414679892920e54d8f78d03a642888c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2245594008954705845
-    second: Tile_1x1 planks_0
+      213: -7298047493652564539
+    second: Fence_Right_end_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile_1x1 planks_0
+      name: Fence_Right_end_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 117
         y: 0
-        width: 256
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 22
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b486282852c06d0e0800000000000000
-      internalID: -2245594008954705845
+      spriteID: 5c5b8e2a87028ba90800000000000000
+      internalID: -7298047493652564539
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e4230d05381838348b3525b931135aa9
+    spriteID: 0b9cf99ec267d1b4b8e1c53396cffd13
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tile_1x1 planks_0: -2245594008954705845
+      Fence_Right_end_0: -7298047493652564539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

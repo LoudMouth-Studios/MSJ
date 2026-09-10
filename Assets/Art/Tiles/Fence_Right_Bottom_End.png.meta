@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8fd92ddaa425ca04299856b190b8908f
+guid: e9c2697234a10834a9334679bc76d5f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2245594008954705845
-    second: Tile_1x1 planks_0
+      213: -4879794832603057324
+    second: Fence_Right_Bottom_End copy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile_1x1 planks_0
+      name: Fence_Right_Bottom_End copy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b486282852c06d0e0800000000000000
-      internalID: -2245594008954705845
+      spriteID: 45378e9347c774cb0800000000000000
+      internalID: -4879794832603057324
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e4230d05381838348b3525b931135aa9
+    spriteID: 66c75fb7eadeb784086f8bf42ec81cbf
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tile_1x1 planks_0: -2245594008954705845
+      Fence_Right_Bottom_End copy_0: -4879794832603057324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

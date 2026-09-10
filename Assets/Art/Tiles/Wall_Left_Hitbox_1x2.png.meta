@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 97d6ca4a36a36164cbf856cc0f78d32b
+guid: 6c5ea4bc114e8dc43a5e37bcfa23e4e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7614176681532881009
-    second: Fences_0
+      213: 1916563742279821689
+    second: Wall_Left_Hitbox_1x2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fences_0
+      name: Wall_Left_Hitbox_1x2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 139
-        height: 127
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 128
+        height: 320
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f878b2856a2055690800000000000000
-      internalID: -7614176681532881009
+      spriteID: 9796bf7b190099a10800000000000000
+      internalID: 1916563742279821689
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e91fb722f854b2245a583f0f842f75d1
+    spriteID: bfa6fdaf98edbad4a8113c319316d92e
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fences_0: -7614176681532881009
+      Wall_Left_Hitbox_1x2_0: 1916563742279821689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
