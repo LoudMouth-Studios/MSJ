@@ -1955,7 +1955,7 @@ GameObject:
   - component: {fileID: 543141430}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2782,7 +2782,7 @@ GameObject:
   - component: {fileID: 740876243}
   m_Layer: 0
   m_Name: CollisionTop
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2832,7 +2832,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4044,6 +4044,7 @@ GameObject:
   - component: {fileID: 1068939676}
   - component: {fileID: 1068939675}
   - component: {fileID: 1068939677}
+  - component: {fileID: 1068939678}
   m_Layer: 0
   m_Name: Diamond_Top
   m_TagString: Untagged
@@ -4224,7 +4225,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4232,6 +4233,18 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1068939678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068939673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875895e33b38b7e4ca2b7e06eb594f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diamond
 --- !u!1 &1180959130
 GameObject:
   m_ObjectHideFlags: 0
@@ -20223,7 +20236,7 @@ GameObject:
   - component: {fileID: 1790398521}
   m_Layer: 0
   m_Name: CollisionBottom
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20273,7 +20286,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -20549,6 +20562,7 @@ GameObject:
   - component: {fileID: 1898005295}
   - component: {fileID: 1898005294}
   - component: {fileID: 1898005296}
+  - component: {fileID: 1898005297}
   m_Layer: 0
   m_Name: Diamond_Bottom
   m_TagString: Untagged
@@ -20755,7 +20769,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -20763,6 +20777,18 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1898005297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898005292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875895e33b38b7e4ca2b7e06eb594f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diamond
 --- !u!1 &1923319722
 GameObject:
   m_ObjectHideFlags: 0
