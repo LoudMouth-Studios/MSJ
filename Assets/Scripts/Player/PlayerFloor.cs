@@ -9,7 +9,7 @@ public class PlayerFloor : MonoBehaviour
 
     void Start()
     {
-        SetFloor(1);
+        SetFloor(0);
     }
 
     public void SetFloor(int floor)
