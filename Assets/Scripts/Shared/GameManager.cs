@@ -19,6 +19,16 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void StartScreen()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+
+    public void FinishLevel()
+    {
+        SceneManager.LoadScene("Diamond stolen");
+    }
+    
     public void TriggerDefeat()
     {
         currentLevelName = SceneManager.GetActiveScene().name;
