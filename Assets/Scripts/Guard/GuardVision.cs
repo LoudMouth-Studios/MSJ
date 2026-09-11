@@ -1,37 +1,47 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal; // Light2D lives here
 
 public class GuardVision : MonoBehaviour
 {
     [Header("Cone Shape")]
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float viewAngle = 70f;       // full cone angle, in degrees
-    [SerializeField] int rayCount = 40;           // mesh resolution
-    [SerializeField] LayerMask obstacleMask;      // the Obstacles layer from Step 2
+    [SerializeField] LayerMask obstacleMask;      // still used by the detection raycast below
 
-    [Header("Rendering")]
-    [SerializeField] Color coneColor = new Color(1f, 0.9f, 0.45f, 0.35f);
+    [Header("Flashlight")]
+    [SerializeField] Color flashlightColor = new Color(1f, 0.92f, 0.75f, 1f);
+    [SerializeField] float intensity = 1.2f;
+    [SerializeField, Range(0f, 1f)] float innerAngleRatio = 0.47f; // soft inner edge, purely cosmetic
+    [SerializeField] bool castShadows = true;
 
     [Header("Target")]
     [SerializeField] Transform target;            // drag the Player here
 
-    Mesh mesh;
+    Light2D flashlight;
     Vector2 facing = Vector2.down;
 
     public bool CanSeeTarget { get; private set; }
 
     void Awake()
     {
-        var go = new GameObject("VisionCone");
+        var go = new GameObject("VisionFlashlight");
         go.transform.SetParent(transform, false);
 
-        var meshFilter = go.AddComponent<MeshFilter>();
-        var meshRenderer = go.AddComponent<MeshRenderer>();
-        meshRenderer.material = new Material(Shader.Find("Sprites/Default")) { color = coneColor };
-        meshRenderer.sortingLayerID = 0;
-        meshRenderer.sortingOrder = 10;
+        flashlight = go.AddComponent<Light2D>();
+        flashlight.lightType = Light2D.LightType.Point;
+        flashlight.color = flashlightColor;
+        flashlight.intensity = intensity;
 
-        mesh = new Mesh();
-        meshFilter.mesh = mesh;
+        // outerAngle is tied to viewAngle on purpose: the beam's edge
+        // is always exactly where detection stops. No more drift like GuardUp had.
+        flashlight.pointLightOuterAngle = viewAngle;
+        flashlight.pointLightInnerAngle = viewAngle * innerAngleRatio;
+        flashlight.pointLightOuterRadius = viewDistance;
+        flashlight.pointLightInnerRadius = 0f;
+
+        flashlight.shadowsEnabled = castShadows;
+        flashlight.shadowIntensity = 0.75f;
+        flashlight.shadowSoftness = 0.3f;
     }
 
     // Called every FixedUpdate by GuardPatrol with its current movement direction
@@ -43,44 +53,16 @@ public class GuardVision : MonoBehaviour
 
     void LateUpdate()
     {
-        DrawConeMesh();
+        AimFlashlight();
         CanSeeTarget = target != null && HasLineOfSight(target);
     }
 
-    void DrawConeMesh()
+    void AimFlashlight()
     {
-        float baseAngle = Mathf.Atan2(facing.y, facing.x) * Mathf.Rad2Deg;
-        float startAngle = baseAngle - viewAngle / 2f;
-        float angleStep = viewAngle / rayCount;
-
-        var vertices = new Vector3[rayCount + 2];
-        var triangles = new int[rayCount * 3];
-        vertices[0] = Vector3.zero;
-
-        for (int i = 0; i <= rayCount; i++)
-        {
-            float angle = startAngle + angleStep * i;
-            Vector2 dir = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
-
-            float dist = viewDistance;
-            var hit = Physics2D.Raycast(transform.position, dir, viewDistance, obstacleMask);
-            if (hit.collider != null) dist = hit.distance;
-
-            vertices[i + 1] = transform.InverseTransformDirection((Vector3)(dir * dist));
-        }
-
-        for (int i = 0; i < rayCount; i++)
-        {
-            triangles[i * 3] = 0;
-            triangles[i * 3 + 1] = i + 1;
-            triangles[i * 3 + 2] = i + 2;
-        }
-
-        mesh.Clear();
-        mesh.vertices = vertices;
-        mesh.triangles = triangles;
-        mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
+        float angle = Mathf.Atan2(facing.y, facing.x) * Mathf.Rad2Deg;
+        // Light2D's cone points along local +Y at zero rotation; our angle is
+        // measured from +X, so it needs a -90 offset. See Step 4 if it looks off.
+        flashlight.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
     }
 
     bool HasLineOfSight(Transform t)
