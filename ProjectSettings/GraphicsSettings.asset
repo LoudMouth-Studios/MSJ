@@ -40,9 +40,6 @@ GraphicsSettings:
   m_CustomRenderPipeline: {fileID: 11400000, guid: d5f24bc07db0df548abe6a6c7cb4417a, type: 2}
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
-  m_CustomRenderPipeline: {fileID: 0}
-  m_TransparencySortMode: 3
-  m_TransparencySortAxis: {x: 0, y: 1, z: 0}
   m_DefaultRenderingPath: 1
   m_DefaultMobileRenderingPath: 1
   m_TierSettings: []
@@ -66,11 +63,6 @@ GraphicsSettings:
     keywordDeclarationOverrides: []
   m_LightsUseLinearIntensity: 1
   m_LightsUseColorTemperature: 1
-  m_RenderPipelineGlobalSettingsMap: {}
-  m_ShaderBuildSettings:
-    keywordDeclarationOverrides: []
-  m_LightsUseLinearIntensity: 0
-  m_LightsUseColorTemperature: 0
   m_LogWhenShaderIsCompiled: 0
   m_LightProbeOutsideHullStrategy: 0
   m_CameraRelativeLightCulling: 0

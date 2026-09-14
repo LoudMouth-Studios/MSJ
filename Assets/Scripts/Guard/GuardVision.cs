@@ -54,7 +54,13 @@ public class GuardVision : MonoBehaviour
     void LateUpdate()
     {
         AimFlashlight();
-        CanSeeTarget = target != null && HasLineOfSight(target);
+
+        bool nowSeesTarget = target != null && HasLineOfSight(target);
+
+        if (nowSeesTarget && !CanSeeTarget)
+            GameManager.Instance?.TriggerDefeat();
+
+        CanSeeTarget = nowSeesTarget;
     }
 
     void AimFlashlight()
