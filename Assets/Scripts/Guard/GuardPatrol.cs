@@ -12,17 +12,22 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] float waypointTolerance = 0.05f;
     [SerializeField] float waitTimeAtPoint = 0.5f;
     [SerializeField] GuardVision vision; // optional, wired in Step 5
+    [SerializeField] Animator animator;
 
     Rigidbody2D rb;
     int currentIndex = 0;
     int direction = 1; // +1 forward, -1 backward (PingPong only)
     float waitTimer;
+    string currentAnimation;
 
     public Vector2 FacingDirection { get; private set; } = Vector2.down;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
@@ -51,6 +56,23 @@ public class GuardPatrol : MonoBehaviour
 
         if (vision != null)
             vision.SetFacing(FacingDirection);
+
+        UpdateAnimation(FacingDirection);
+    }
+
+    void UpdateAnimation(Vector2 dir)
+    {
+        if (animator == null) return;
+
+        // corner states are named for the diagonal the guard is walking towards
+        string stateName = dir.y >= 0f
+            ? (dir.x >= 0f ? "top_right" : "top_left")
+            : (dir.x >= 0f ? "bottom_right" : "bottom_left");
+
+        if (stateName == currentAnimation) return;
+
+        animator.Play(stateName);
+        currentAnimation = stateName;
     }
 
     void AdvanceIndex()

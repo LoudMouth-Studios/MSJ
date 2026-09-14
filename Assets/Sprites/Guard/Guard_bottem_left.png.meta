@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: afe34e716d917b340957697db32a12ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8889726131730927782
+    second: Guard_bottem_left_0
+  - first:
+      213: 1194218565089273114
+    second: Guard_bottem_left_1
+  - first:
+      213: -5578986824184729800
+    second: Guard_bottem_left_2
+  - first:
+      213: 7657148058632693235
+    second: Guard_bottem_left_3
+  - first:
+      213: 6469926079680619602
+    second: Guard_bottem_left_4
+  - first:
+      213: 5750730550029914597
+    second: Guard_bottem_left_5
+  - first:
+      213: -1000925761334872245
+    second: Guard_bottem_left_6
+  - first:
+      213: -8473849683681229538
+    second: Guard_bottem_left_7
+  - first:
+      213: -7661060826813595323
+    second: Guard_bottem_left_8
+  - first:
+      213: -8914795182912770474
+    second: Guard_bottem_left_9
+  - first:
+      213: 7849727588537081384
+    second: Guard_bottem_left_10
+  - first:
+      213: -7406320840424158524
+    second: Guard_bottem_left_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guard_bottem_left_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 45
+        width: 173
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0545821d6ae5b70800000000000000
+      internalID: 8889726131730927782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 48
+        width: 172
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15a25c2577b29010800000000000000
+      internalID: 1194218565089273114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 50
+        width: 173
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f62e9ca057392b0800000000000000
+      internalID: -5578986824184729800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_3
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 48
+        width: 173
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5af5b0797a34a60800000000000000
+      internalID: 7657148058632693235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_4
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 45
+        width: 173
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25426668d7bc9c950800000000000000
+      internalID: 6469926079680619602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_5
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 42
+        width: 173
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1158177f2becf40800000000000000
+      internalID: 5750730550029914597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_6
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 41
+        width: 173
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47f81db25ffb12f0800000000000000
+      internalID: -1000925761334872245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_7
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 41
+        width: 173
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15cf1ceb96d66a80800000000000000
+      internalID: -8473849683681229538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_8
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 40
+        width: 173
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5418d1f94c17ea590800000000000000
+      internalID: -7661060826813595323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_9
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 41
+        width: 173
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65eee158309484480800000000000000
+      internalID: -8914795182912770474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_10
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 41
+        width: 173
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e1652f6a5dfec60800000000000000
+      internalID: 7849727588537081384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_bottem_left_11
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 42
+        width: 173
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca02fd9f66773990800000000000000
+      internalID: -7406320840424158524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Guard_bottem_left_0: 8889726131730927782
+      Guard_bottem_left_1: 1194218565089273114
+      Guard_bottem_left_10: 7849727588537081384
+      Guard_bottem_left_11: -7406320840424158524
+      Guard_bottem_left_2: -5578986824184729800
+      Guard_bottem_left_3: 7657148058632693235
+      Guard_bottem_left_4: 6469926079680619602
+      Guard_bottem_left_5: 5750730550029914597
+      Guard_bottem_left_6: -1000925761334872245
+      Guard_bottem_left_7: -8473849683681229538
+      Guard_bottem_left_8: -7661060826813595323
+      Guard_bottem_left_9: -8914795182912770474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
