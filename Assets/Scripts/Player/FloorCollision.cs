@@ -1,21 +1,13 @@
 using UnityEngine;
 
-public class PlayerFloor : MonoBehaviour
+public class FloorCollision : MonoBehaviour
 {
-    public GameObject collisionBottom;
-    public GameObject collisionTop;
-
-    public int playerHeight = 0;
-
-    private void Start()
-    {
-        SetFloor(0);
-    }
+    [Header("Collision")]
+    [SerializeField] private GameObject collisionBottom;
+    [SerializeField] private GameObject collisionTop;
 
     public void SetFloor(int floor)
     {
-        playerHeight = floor;
-
         if (floor == 0)
         {
             collisionBottom.SetActive(true);
