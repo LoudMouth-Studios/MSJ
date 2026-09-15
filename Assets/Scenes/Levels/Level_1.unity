@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9809048, b: 1, a: 0.05490196}
+  m_Color: {r: 0, g: 0.9809048, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5710,7 +5710,6 @@ GameObject:
   - component: {fileID: 1377759012}
   - component: {fileID: 1377759011}
   - component: {fileID: 1377759010}
-  - component: {fileID: 1377759009}
   m_Layer: 0
   m_Name: Diamond_Top_Empty
   m_TagString: Untagged
@@ -5733,18 +5732,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 376296194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1377759009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377759007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875895e33b38b7e4ca2b7e06eb594f65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Diamond
 --- !u!19719996 &1377759010
 TilemapCollider2D:
   m_ObjectHideFlags: 0
