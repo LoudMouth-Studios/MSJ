@@ -1,13 +1,15 @@
-using System;
 using UnityEngine;
 
-public class Diamond : MonoBehaviour
+public class Diamond : MonoBehaviour, IInteractable
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    bool collected;
+
+    public void Interact()
     {
-        if (other.CompareTag("Player"))
-        {
-            GameManager.Instance?.FinishLevel();
-        }
+        if (collected) return;
+        collected = true;
+
+        // TODO: show a "carrying diamond" icon on the Player here.
+        gameObject.SetActive(false); // removes the diamond tile from the level
     }
 }
