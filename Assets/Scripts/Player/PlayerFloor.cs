@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class PlayerFloor : MonoBehaviour
 {
-    public GameObject collisionBottom;
-    public GameObject collisionTop;
+    [Header("Player Collision")]
+    [SerializeField] private GameObject collisionBottom;
+    [SerializeField] private GameObject collisionTop;
 
-    public int playerHeight = 0;
+    public int playerHeight { get; private set; }
 
-    void Start()
+    private void Start()
     {
         SetFloor(0);
     }
