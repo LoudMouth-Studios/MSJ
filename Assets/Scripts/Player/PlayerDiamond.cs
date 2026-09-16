@@ -9,7 +9,7 @@ public class Diamond : MonoBehaviour
 
     private void Start()
     {
-        interactButton.interactable ?= false;
+        interactButton.interactable = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,6 +35,6 @@ public class Diamond : MonoBehaviour
         if (!playerInRange)
             return;
 
-        GameManager.Instance?.FinishLevel();
+        GameManager.Instance.FinishLevel();
     }
 }
