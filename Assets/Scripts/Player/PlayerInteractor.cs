@@ -5,7 +5,7 @@ public class PlayerInteractor : MonoBehaviour
 {
     readonly List<IInteractable> targetsInRange = new List<IInteractable>();
 
-    public bool HasTarget => targetsInRange.Count > 0;
+    public bool HasTarget => targetsInRange.Exists(t => t.CanInteract);
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,7 +21,7 @@ public class PlayerInteractor : MonoBehaviour
 
     public void TryInteract()
     {
-        if (targetsInRange.Count > 0)
-            targetsInRange[0].Interact();
+        IInteractable target = targetsInRange.Find(t => t.CanInteract);
+        target?.Interact();
     }
 }
