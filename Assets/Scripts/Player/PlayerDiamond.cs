@@ -1,40 +1,15 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Diamond : MonoBehaviour
+public class Diamond : MonoBehaviour, IInteractable
 {
-    [SerializeField] private Button interactButton;
-
-    private bool playerInRange = false;
-
-    private void Start()
-    {
-        interactButton.interactable = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = true;
-            interactButton.interactable = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = false;
-            interactButton.interactable = false;
-        }
-    }
+    bool collected;
 
     public void Interact()
     {
-        if (!playerInRange)
-            return;
+        if (collected) return;
+        collected = true;
 
-        GameManager.Instance.FinishLevel();
+        // TODO: show a "carrying diamond" icon on the Player here.
+        gameObject.SetActive(false); // removes the diamond tile from the level
     }
 }
