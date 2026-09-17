@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Wall
+  - TopTrigger
+  - BottomTrigger
   layers:
   - Default
   - TransparentFX
@@ -12,8 +13,8 @@ TagManager:
   - Obstacles
   - Water
   - UI
-  - 
-  - 
+  - Top Collision
+  - Bottom Collision
   - 
   - 
   - 
