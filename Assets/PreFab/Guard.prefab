@@ -181,6 +181,7 @@ MonoBehaviour:
   waypointTolerance: 0.05
   waitTimeAtPoint: 0.5
   vision: {fileID: 8403632558705398975}
+  animator: {fileID: 0}
 --- !u!114 &8403632558705398975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,9 +196,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuardVision
   viewDistance: 5
   viewAngle: 70
-  rayCount: 40
   obstacleMask:
     serializedVersion: 2
     m_Bits: 8
-  coneColor: {r: 1, g: 0.9, b: 0.45, a: 0.35}
+  flashlightColor: {r: 1, g: 0.92, b: 0.75, a: 1}
+  intensity: 1.2
+  innerAngleRatio: 0.47
+  castShadows: 1
+  offsetTopRight: {x: -0.5, y: -0.5}
+  offsetTopLeft: {x: -0.6, y: -0.8}
+  offsetBottomRight: {x: 0.7, y: -0.4}
+  offsetBottomLeft: {x: 0.4, y: -0.8}
   target: {fileID: 0}

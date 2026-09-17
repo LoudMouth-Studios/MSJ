@@ -11,8 +11,14 @@ public class GuardVision : MonoBehaviour
     [Header("Flashlight")]
     [SerializeField] Color flashlightColor = new Color(1f, 0.92f, 0.75f, 1f);
     [SerializeField] float intensity = 1.2f;
-    [SerializeField, Range(0f, 1f)] float innerAngleRatio = 0.47f; // soft inner edge, purely cosmetic
+    [SerializeField, Range(0f, 1f)] float innerAngleRatio = 0.47f;
     [SerializeField] bool castShadows = true;
+
+    [Header("Flashlight Position (per facing)")]
+    [SerializeField] Vector2 offsetTopRight = new Vector2(-0.5f, -0.5f);       
+    [SerializeField] Vector2 offsetTopLeft = new Vector2(-0.6f, -0.8f);      
+    [SerializeField] Vector2 offsetBottomRight = new Vector2(0.7f, -0.4f);
+    [SerializeField] Vector2 offsetBottomLeft = new Vector2(0.4f, -0.8f);
 
     [Header("Target")]
     [SerializeField] Transform target;            // drag the Player here
@@ -65,10 +71,17 @@ public class GuardVision : MonoBehaviour
 
     void AimFlashlight()
     {
+        flashlight.transform.localPosition = GetOffsetForFacing(facing);
+
         float angle = Mathf.Atan2(facing.y, facing.x) * Mathf.Rad2Deg;
-        // Light2D's cone points along local +Y at zero rotation; our angle is
-        // measured from +X, so it needs a -90 offset. See Step 4 if it looks off.
         flashlight.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+    }
+
+    Vector2 GetOffsetForFacing(Vector2 dir)
+    {
+        return dir.y >= 0f
+            ? (dir.x >= 0f ? offsetTopRight : offsetTopLeft)
+            : (dir.x >= 0f ? offsetBottomRight : offsetBottomLeft);
     }
 
     bool HasLineOfSight(Transform t)
