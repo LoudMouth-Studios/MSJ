@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class PowerInteractable : MonoBehaviour, IInteractable
 {
-    [SerializeField] GameObject diamondLight;
+    [SerializeField] GameObject[] diamondLights;
 
     public void Interact()
     {
-        if (diamondLight != null)
-            diamondLight.SetActive(false);
+        foreach (GameObject light in diamondLights)
+        {
+            if (light != null)
+                light.SetActive(false);
+        }
     }
 }
