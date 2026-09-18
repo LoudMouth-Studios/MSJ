@@ -4569,7 +4569,7 @@ Transform:
   m_GameObject: {fileID: 999788636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.68, y: 13.52, z: -10}
+  m_LocalPosition: {x: -9.41, y: 13.84, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20642,6 +20642,8 @@ GameObject:
   - component: {fileID: 1487369257}
   - component: {fileID: 1487369259}
   - component: {fileID: 1487369258}
+  - component: {fileID: 1487369261}
+  - component: {fileID: 1487369260}
   m_Layer: 0
   m_Name: Exit_Door
   m_TagString: Untagged
@@ -24121,6 +24123,7 @@ GameObject:
   - component: {fileID: 1938651369}
   - component: {fileID: 1938651368}
   - component: {fileID: 1938651373}
+  - component: {fileID: 1938651374}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -24280,9 +24283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21a08ea16d1159044ae5e019e5dabbd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFloor
-  collisionBottom: {fileID: 1790398519}
-  collisionTop: {fileID: 740876241}
-  playerHeight: 0
+  playerCollision: {fileID: 1790398519}
+  topLayer: 6
+  bottomLayer: 7
 --- !u!70 &1938651374
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -24791,3 +24794,7 @@ SceneRoots:
   - {fileID: 1698516331}
   - {fileID: 1180959132}
   - {fileID: 75419040}
+  - {fileID: 576445632}
+  - {fileID: 587149908}
+  - {fileID: 1578329759}
+  - {fileID: 1822969949}
