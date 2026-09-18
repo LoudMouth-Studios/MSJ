@@ -2,29 +2,40 @@ using UnityEngine;
 
 public class PlayerFloor : MonoBehaviour
 {
-    public GameObject collisionBottom;
-    public GameObject collisionTop;
+    [Header("Player Collision")]
+    [SerializeField] private GameObject playerCollision;
 
-    public int playerHeight = 0;
+    [Header("Collision Layers")]
+    [SerializeField] private int topLayer = 6;
+    [SerializeField] private int bottomLayer = 7;
 
-    void Start()
+    private void Start()
     {
-        SetFloor(0);
+        // Player starts on the top floor.
+        SetTopFloor();
     }
 
-    public void SetFloor(int floor)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        playerHeight = floor;
+        if (other.CompareTag("TopTrigger"))
+        {
+            SetTopFloor();
+        }
+        else if (other.CompareTag("BottomTrigger"))
+        {
+            SetBottomFloor();
+        }
+    }
 
-        if (floor == 0)
-        {
-            collisionBottom.SetActive(true);
-            collisionTop.SetActive(false);
-        }
-        else if (floor == 1)
-        {
-            collisionBottom.SetActive(false);
-            collisionTop.SetActive(true);
-        }
+    private void SetTopFloor()
+    {
+        playerCollision.layer = topLayer;
+        Debug.Log("Player is now on TOP floor");
+    }
+
+    private void SetBottomFloor()
+    {
+        playerCollision.layer = bottomLayer;
+        Debug.Log("Player is now on BOTTOM floor");
     }
 }
