@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     string currentLevelName;
+    public bool HasDiamond { get; private set; }
 
     void Awake()
     {
@@ -17,6 +18,12 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += (scene, mode) => HasDiamond = false;
+    }
+
+    public void CollectDiamond()
+    {
+        HasDiamond = true;
     }
 
     public void StartScreen()
