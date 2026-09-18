@@ -112,7 +112,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         GameObject col = other.gameObject;
-        Debug.unityLogger.Log("chekcing");
         if (col.CompareTag("sortcol"))
         {
             Debug.unityLogger.Log("Collided");
