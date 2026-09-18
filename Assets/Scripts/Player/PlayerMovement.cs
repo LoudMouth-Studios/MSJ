@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,15 +7,20 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 3f;
     [SerializeField] private Animator _animator;
-
+    [SerializeField] private SpriteRenderer _renderer;
+    [SerializeField] private int sortbehind;
+    [SerializeField] private int sortdefault;
     Rigidbody2D rb;
     InputSystem_Actions controls;
     Vector2 moveInput;
     string lastDirection = "down";
     string currentAnimation;
+    
+    
 
     void Awake()
     {
+        sortdefault = _renderer.sortingOrder;
         rb = GetComponent<Rigidbody2D>();
         controls = new InputSystem_Actions();
 
@@ -101,6 +107,27 @@ public class PlayerMovement : MonoBehaviour
                 PlayAnimation("Run_down");
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        GameObject col = other.gameObject;
+        Debug.unityLogger.Log("chekcing");
+        if (col.CompareTag("sortcol"))
+        {
+            Debug.unityLogger.Log("Collided");
+            _renderer.sortingOrder = sortbehind;
+        }
+ 
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        GameObject col = other.gameObject;
+        if (col.CompareTag("sortcol"))
+        {
+            _renderer.sortingOrder = sortdefault;
+        }
+
     }
 
     void PlayAnimation(string stateName)
