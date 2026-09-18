@@ -109,24 +109,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void BottomTriggerEnter(Collider2D other)
     {
-        GameObject col = other.gameObject;
-        if (col.CompareTag("sortcol"))
+        if (other.CompareTag("sortcol"))
         {
-            Debug.unityLogger.Log("Collided");
             _renderer.sortingOrder = sortbehind;
         }
- 
     }
-    private void OnTriggerExit2D(Collider2D other)
+
+    public void BottomTriggerExit(Collider2D other)
     {
-        GameObject col = other.gameObject;
-        if (col.CompareTag("sortcol"))
+        if (other.CompareTag("sortcol"))
         {
             _renderer.sortingOrder = sortdefault;
         }
-
     }
 
     void PlayAnimation(string stateName)

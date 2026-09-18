@@ -17,12 +17,16 @@ public class PlayerFloor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+   
+        
         if (other.CompareTag("TopTrigger"))
         {
+            Debug.unityLogger.Log("Top");
             SetTopFloor();
         }
         else if (other.CompareTag("BottomTrigger"))
         {
+            Debug.unityLogger.Log("Bottom");
             SetBottomFloor();
         }
     }

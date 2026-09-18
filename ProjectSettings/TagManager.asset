@@ -8,6 +8,7 @@ TagManager:
   - sortcol
   - TopTrigger
   - BottomTrigger
+  - PlayerBottom
   layers:
   - Default
   - TransparentFX
