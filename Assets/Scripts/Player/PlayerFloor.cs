@@ -9,6 +9,8 @@ public class PlayerFloor : MonoBehaviour
     [SerializeField] private int topLayer = 6;
     [SerializeField] private int bottomLayer = 7;
 
+    public bool IsOnTopFloor { get; private set; }
+    
     private void Start()
     {
         // Player starts on the top floor.
@@ -34,12 +36,12 @@ public class PlayerFloor : MonoBehaviour
     private void SetTopFloor()
     {
         playerCollision.layer = topLayer;
-        Debug.Log("Player is now on TOP floor");
+        IsOnTopFloor = true;
     }
 
     private void SetBottomFloor()
     {
         playerCollision.layer = bottomLayer;
-        Debug.Log("Player is now on BOTTOM floor");
+        IsOnTopFloor = false;
     }
 }

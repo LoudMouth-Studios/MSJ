@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private int sortbehind;
     [SerializeField] private int sortdefault;
+    
+    [SerializeField] private PlayerFloor playerFloor;
+    
     Rigidbody2D rb;
     InputSystem_Actions controls;
     Vector2 moveInput;
@@ -111,9 +114,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void BottomTriggerEnter(Collider2D other)
     {
-        if (other.CompareTag("sortcol"))
+        if (other.CompareTag("sortcol") && (playerFloor.IsOnTopFloor == false))
         {
             _renderer.sortingOrder = sortbehind;
+        }
+        else
+        {
+            _renderer.sortingOrder = 12;
         }
     }
 
