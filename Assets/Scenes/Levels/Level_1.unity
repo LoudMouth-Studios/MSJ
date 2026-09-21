@@ -1080,6 +1080,26 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1938651367}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: playerFeet
+      value: 
+      objectReference: {fileID: 1790398521}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: playerFloor
+      value: 
+      objectReference: {fileID: 1790398523}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: topFloorObstacles.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: bottomFloorObstacles.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1100,7 +1120,7 @@ GameObject:
   - component: {fileID: 97644867}
   - component: {fileID: 97644866}
   - component: {fileID: 97644868}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Closed_Rooms_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3284,7 +3304,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1938651367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24570,7 +24590,7 @@ GameObject:
   - component: {fileID: 1923319725}
   - component: {fileID: 1923319724}
   - component: {fileID: 1923319726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Closed_Rooms_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25526,7 +25546,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938651366}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -25549,7 +25569,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -26273,7 +26293,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1938651367}
     - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: playerFeet
+      value: 
+      objectReference: {fileID: 1790398521}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
       propertyPath: coneColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: playerFloor
+      value: 
+      objectReference: {fileID: 1790398523}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: obstacleMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

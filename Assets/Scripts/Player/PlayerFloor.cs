@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerFloor : MonoBehaviour
 {
+    public bool IsOnTopFloor => playerCollision.layer == topLayer;
+    
     [Header("Player Collision")]
     [SerializeField] private GameObject playerCollision;
 
