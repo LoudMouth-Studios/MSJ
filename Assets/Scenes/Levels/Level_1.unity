@@ -1089,6 +1089,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1790398523}
     - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: checkFeetEdges
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
       propertyPath: obstacleMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
@@ -26561,7 +26565,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938651366}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -27319,6 +27323,10 @@ PrefabInstance:
       propertyPath: playerFloor
       value: 
       objectReference: {fileID: 1790398523}
+    - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
+      propertyPath: checkFeetEdges
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8403632558705398975, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
       propertyPath: obstacleMask.m_Bits
       value: 0
