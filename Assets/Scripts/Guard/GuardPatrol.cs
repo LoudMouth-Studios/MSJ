@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 
 public enum PatrolMode { Loop, PingPong }
@@ -13,11 +14,17 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] float waitTimeAtPoint = 0.5f;
     [SerializeField] GuardVision vision; // optional, wired in Step 5
     [SerializeField] Animator animator;
+    
+    [Header("Random Reversal")]
+    [SerializeField] bool randomReverse = true;
+    [SerializeField] float minReverseInterval = 5f;
+    [SerializeField] float maxReverseInterval = 25f;
 
     Rigidbody2D rb;
     int currentIndex = 0;
     int direction = 1; // +1 forward, -1 backward (PingPong only)
     float waitTimer;
+    float reverseTimer;
     string currentAnimation;
 
     public Vector2 FacingDirection { get; private set; } = Vector2.down;
@@ -28,11 +35,30 @@ public class GuardPatrol : MonoBehaviour
 
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
+        
+        reverseTimer = Random.Range(minReverseInterval, maxReverseInterval);
+    }
+    
+    void ReverseNow()
+    {
+        int previousIndex = (currentIndex - direction + waypoints.Length) % waypoints.Length;
+        direction *= -1;
+        currentIndex = previousIndex;
     }
 
     void FixedUpdate()
     {
         if (waypoints == null || waypoints.Length == 0) return;
+        
+        if (randomReverse && mode == PatrolMode.Loop)
+        {
+            reverseTimer -= Time.fixedDeltaTime;
+            if (reverseTimer <= 0f)
+            {
+                ReverseNow();
+                reverseTimer = Random.Range(minReverseInterval, maxReverseInterval);
+            }
+        }
 
         if (waitTimer > 0f)
         {
@@ -81,7 +107,7 @@ public class GuardPatrol : MonoBehaviour
 
         if (mode == PatrolMode.Loop)
         {
-            currentIndex = (currentIndex + 1) % waypoints.Length;
+            currentIndex = (currentIndex + direction + waypoints.Length) % waypoints.Length;
         }
         else // PingPong
         {
