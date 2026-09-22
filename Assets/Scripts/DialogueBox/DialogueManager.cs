@@ -14,6 +14,9 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue")]
     [SerializeField] private DialogueLine[] dialogueLines;
 
+    [Header("Level")]
+    [SerializeField] private LevelManager levelManager;
+
     [Header("Typewriter Settings")]
     [SerializeField] private float typingSpeed = 0.03f;
 
@@ -43,8 +46,6 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueLine line = dialogueLines[currentLine];
 
-        // profilePicture.sprite = line.portrait;
-
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
@@ -71,8 +72,6 @@ public class DialogueManager : MonoBehaviour
 
     public void NextLine()
     {
-        // If the text is still typing,
-        // instantly show the complete sentence.
         if (isTyping)
         {
             if (typingCoroutine != null)
@@ -86,15 +85,18 @@ public class DialogueManager : MonoBehaviour
 
             return;
         }
-
+        
         currentLine++;
-
+        
         if (currentLine >= dialogueLines.Length)
         {
             dialogueBox.SetActive(false);
+            
+            levelManager.StartLevelTimer();
+
             return;
         }
-
+        
         ShowLine();
     }
 }
