@@ -103,12 +103,12 @@ TextureImporter:
       name: LevelSelection_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 83
         y: 0
-        width: 2081
+        width: 1920
         height: 1078
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 22a4f5a636c443540a0bc5676f6d10d8
     internalID: 0
     vertices: []
     indices: 
