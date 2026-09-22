@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            _renderer.sortingOrder = 12;
+            _renderer.sortingOrder = 13;
         }
     }
 
