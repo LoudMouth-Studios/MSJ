@@ -23275,7 +23275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   dialogueManager: {fileID: 1897787480}
-  levelTimer: {fileID: 0}
+  levelTimer: {fileID: 766480906}
 --- !u!4 &1673034162
 Transform:
   m_ObjectHideFlags: 0
@@ -26083,6 +26083,7 @@ MonoBehaviour:
   - text: My name is walter white yo
   - text: and i am skyler white yo
   - text: jesse pink man yo
+  levelManager: {fileID: 1673034161}
   typingSpeed: 0.05
 --- !u!1 &1898005292
 GameObject:
