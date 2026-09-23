@@ -72,43 +72,61 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput == Vector2.zero)
         {
-            if (lastDirection == "left")
-                PlayAnimation("Idle_left");
-            else if (lastDirection == "right")
-                PlayAnimation("Idle_right");
-            else if (lastDirection == "up")
-                PlayAnimation("Idle_up");
-            else
-                PlayAnimation("Idle");
-
+            PlayAnimation(IdleAnimationFor(lastDirection));
             return;
         }
 
-        if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
+        lastDirection = DirectionFromInput(moveInput);
+        PlayAnimation(RunAnimationFor(lastDirection));
+    }
+
+    // Maps analog movement input to one of 8 compass directions.
+    static string DirectionFromInput(Vector2 input)
+    {
+        float angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
+        if (angle < 0) angle += 360f;
+
+        int index = Mathf.RoundToInt(angle / 45f) % 8;
+        switch (index)
         {
-            if (moveInput.x < 0)
-            {
-                lastDirection = "left";
-                PlayAnimation("Run_left");
-            }
-            else if (moveInput.x > 0)
-            {
-                lastDirection = "right";
-                PlayAnimation("Run_Right");
-            }
+            case 0: return "right";
+            case 1: return "NE";
+            case 2: return "up";
+            case 3: return "NW";
+            case 4: return "left";
+            case 5: return "SW";
+            case 6: return "down";
+            default: return "SE";
         }
-        else
+    }
+
+    static string IdleAnimationFor(string direction)
+    {
+        switch (direction)
         {
-            if (moveInput.y > 0)
-            {
-                lastDirection = "up";
-                PlayAnimation("Run_up");
-            }
-            else if (moveInput.y < 0)
-            {
-                lastDirection = "down";
-                PlayAnimation("Run_down");
-            }
+            case "left": return "Idle_left";
+            case "right": return "Idle_right";
+            case "up": return "Idle_up";
+            case "down": return "Idle";
+            case "NE": return "Idle_NE";
+            case "NW": return "Idle_NW";
+            case "SE": return "Idle_SE";
+            default: return "Idle_SW";
+        }
+    }
+
+    static string RunAnimationFor(string direction)
+    {
+        switch (direction)
+        {
+            case "left": return "Run_left";
+            case "right": return "Run_Right";
+            case "up": return "Run_up";
+            case "down": return "Run_down";
+            case "NE": return "Run_NE";
+            case "NW": return "Run_NW";
+            case "SE": return "Run_SE";
+            default: return "Run_SW";
         }
     }
 
