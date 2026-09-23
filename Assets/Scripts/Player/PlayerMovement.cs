@@ -53,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (GameManager.IsPaused) return;
+        
         Vector2 delta = moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + delta);
 
