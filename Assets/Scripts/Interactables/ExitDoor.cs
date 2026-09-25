@@ -12,11 +12,13 @@ public class ExitDoor : MonoBehaviour, IInteractable
     {
         if (!CanInteract)
             return;
-        
+
         int stars = levelTimer.StopTimer();
 
+        GameManager.Instance.SetLevelStars(stars);
+
         Debug.Log("Level completed with " + stars + " stars.");
-        
+
         GameManager.Instance.FinishLevel();
     }
 }
