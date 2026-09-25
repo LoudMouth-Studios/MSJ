@@ -26082,8 +26082,9 @@ MonoBehaviour:
   dialogueLines:
   - text: Hey kiddo Lester here.
   - text: I'll give you a quick rundown of how things work around here.
-  - text: The guards keep out of their sight.
-  - text: Tinker with the juction box. Grab the ruby. And get out.
+  - text: Watch out of the guards their sight.
+  - text: Easy right? Good luck lil' thief.
+  - text: Tinker with the junction box. Grab the ruby. And get out.
   - text: Easy right? Good luck lil' thief.
   levelManager: {fileID: 1673034161}
   typingSpeed: 0.05

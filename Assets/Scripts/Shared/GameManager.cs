@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     string currentLevelName;
     public bool HasDiamond { get; private set; }
+    public int LastLevelStars { get; private set; }
 
     void Awake()
     {
@@ -20,7 +21,10 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += (scene, mode) => HasDiamond = false;
     }
-
+    public void SetLevelStars(int stars)
+    {
+        LastLevelStars = stars;
+    }
     public void CollectDiamond()
     {
         HasDiamond = true;
