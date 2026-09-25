@@ -1,79 +1,79 @@
 fileFormatVersion: 2
-guid: 7fe72c3adeeb9b9439b571049f23583e
+guid: 5ce5d3264f121774885a5f7b30aac067
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 717631261649560623
-    second: Main_Caracter_Walking_Left_Animation_0
+      213: -3591744950038398924
+    second: Main_Character_Walking_SW_0
   - first:
-      213: 1502036455664425969
-    second: Main_Caracter_Walking_Left_Animation_1
+      213: 7712671032691703341
+    second: Main_Character_Walking_SW_1
   - first:
-      213: 1737850098025320401
-    second: Main_Caracter_Walking_Left_Animation_2
+      213: -6804816169057095269
+    second: Main_Character_Walking_SW_2
   - first:
-      213: -1230139425165407873
-    second: Main_Caracter_Walking_Left_Animation_3
+      213: -8574688662898493462
+    second: Main_Character_Walking_SW_3
   - first:
-      213: 2815280932381718189
-    second: Main_Caracter_Walking_Left_Animation_4
+      213: -6847655657808069738
+    second: Main_Character_Walking_SW_4
   - first:
-      213: -6134178462058604062
-    second: Main_Caracter_Walking_Left_Animation_5
+      213: -8495378806274213313
+    second: Main_Character_Walking_SW_5
   - first:
-      213: -2243915550698796332
-    second: Main_Caracter_Walking_Left_Animation_6
+      213: -7954365495729287017
+    second: Main_Character_Walking_SW_6
   - first:
-      213: -3533991987336559023
-    second: Main_Caracter_Walking_Left_Animation_7
+      213: -1528957061641922814
+    second: Main_Character_Walking_SW_7
   - first:
-      213: -5600802809594557839
-    second: Main_Caracter_Walking_Left_Animation_8
+      213: 7341962915637762699
+    second: Main_Character_Walking_SW_8
   - first:
-      213: -233490692696444891
-    second: Main_Caracter_Walking_Left_Animation_9
+      213: -1106531382117982344
+    second: Main_Character_Walking_SW_9
   - first:
-      213: -8613637486286392311
-    second: Main_Caracter_Walking_Left_Animation_10
+      213: 2108301879225554932
+    second: Main_Character_Walking_SW_10
   - first:
-      213: -1583176008765289051
-    second: Main_Caracter_Walking_Left_Animation_11
+      213: -3291104156897273362
+    second: Main_Character_Walking_SW_11
   - first:
-      213: 7563405634632616331
-    second: Main_Caracter_Walking_Left_Animation_12
+      213: -723449398074658768
+    second: Main_Character_Walking_SW_12
   - first:
-      213: 8607176543650805100
-    second: Main_Caracter_Walking_Left_Animation_13
+      213: 3208841246069246321
+    second: Main_Character_Walking_SW_13
   - first:
-      213: -50141163502681623
-    second: Main_Caracter_Walking_Left_Animation_14
+      213: -4726655533374018159
+    second: Main_Character_Walking_SW_14
   - first:
-      213: 5877369002716128099
-    second: Main_Caracter_Walking_Left_Animation_15
+      213: -3629115727497958066
+    second: Main_Character_Walking_SW_15
   - first:
-      213: 7026529601021446239
-    second: Main_Caracter_Walking_Left_Animation_16
+      213: -7906039819148128791
+    second: Main_Character_Walking_SW_16
   - first:
-      213: 3006800489050169779
-    second: Main_Caracter_Walking_Left_Animation_17
+      213: -9096845443228778931
+    second: Main_Character_Walking_SW_17
   - first:
-      213: -6809414466297871940
-    second: Main_Caracter_Walking_Left_Animation_18
+      213: -7296097984264448189
+    second: Main_Character_Walking_SW_18
   - first:
-      213: -889673879816090437
-    second: Main_Caracter_Walking_Left_Animation_19
+      213: 1485911165150187851
+    second: Main_Character_Walking_SW_19
   - first:
-      213: 8046861535863095292
-    second: Main_Caracter_Walking_Left_Animation_20
+      213: -3448108423202622680
+    second: Main_Character_Walking_SW_20
   - first:
-      213: 4590732233880558424
-    second: Main_Caracter_Walking_Left_Animation_21
+      213: -6801786139332383890
+    second: Main_Character_Walking_SW_21
   - first:
-      213: -1912703838684253906
-    second: Main_Caracter_Walking_Left_Animation_22
+      213: 3017907205737178772
+    second: Main_Character_Walking_SW_22
   - first:
-      213: 3548099996348976527
-    second: Main_Caracter_Walking_Left_Animation_23
+      213: -8326162565056930304
+    second: Main_Character_Walking_SW_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -169,13 +169,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_0
+      name: Main_Character_Walking_SW_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 185
-        height: 265
+        x: 16
+        y: 1444
+        width: 179
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f24665e84d985f900800000000000000
-      internalID: 717631261649560623
+      spriteID: 43878217ffe872ec0800000000000000
+      internalID: -3591744950038398924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_1
+      name: Main_Character_Walking_SW_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 187
-        height: 265
+        x: 209
+        y: 1447
+        width: 179
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fb9093c23e48d410800000000000000
-      internalID: 1502036455664425969
+      spriteID: d2eb805d079e80b60800000000000000
+      internalID: 7712671032691703341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_2
+      name: Main_Character_Walking_SW_2
       rect:
         serializedVersion: 2
-        x: 397
-        y: 0
-        width: 187
-        height: 265
+        x: 412
+        y: 1449
+        width: 179
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1df4da5e4751e1810800000000000000
-      internalID: 1737850098025320401
+      spriteID: b9174896fbf6091a0800000000000000
+      internalID: -6804816169057095269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_3
+      name: Main_Character_Walking_SW_3
       rect:
         serializedVersion: 2
-        x: 606
-        y: 2
-        width: 187
-        height: 263
+        x: 609
+        y: 1449
+        width: 178
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7900dad5baadeee0800000000000000
-      internalID: -1230139425165407873
+      spriteID: ae7bd5c7716900980800000000000000
+      internalID: -8574688662898493462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_4
+      name: Main_Character_Walking_SW_4
       rect:
         serializedVersion: 2
-        x: 809
-        y: 0
-        width: 187
-        height: 265
+        x: 15
+        y: 1174
+        width: 178
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da6fa8d8713e11720800000000000000
-      internalID: 2815280932381718189
+      spriteID: 69bf72ca57d38f0a0800000000000000
+      internalID: -6847655657808069738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_5
+      name: Main_Character_Walking_SW_5
       rect:
         serializedVersion: 2
-        x: 1011
-        y: 0
-        width: 187
-        height: 265
+        x: 209
+        y: 1172
+        width: 179
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e9152460350fdaa0800000000000000
-      internalID: -6134178462058604062
+      spriteID: f3ab4a37cf95a1a80800000000000000
+      internalID: -8495378806274213313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_6
+      name: Main_Character_Walking_SW_6
       rect:
         serializedVersion: 2
-        x: 1210
-        y: 0
-        width: 187
-        height: 265
+        x: 401
+        y: 1171
+        width: 179
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,20 +316,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4da8f9602b20cd0e0800000000000000
-      internalID: -2243915550698796332
+      spriteID: 7909e65c9ba6c9190800000000000000
+      internalID: -7954365495729287017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_7
+      name: Main_Character_Walking_SW_7
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 0
-        width: 187
-        height: 265
+        x: 613
+        y: 1171
+        width: 179
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,20 +338,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1564abbe20db4fec0800000000000000
-      internalID: -3533991987336559023
+      spriteID: 207120837ad08cae0800000000000000
+      internalID: -1528957061641922814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_8
+      name: Main_Character_Walking_SW_8
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 2
-        width: 187
-        height: 263
+        x: 10
+        y: 895
+        width: 178
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17a4b1dd483f542b0800000000000000
-      internalID: -5600802809594557839
+      spriteID: b8a1ea45f54e3e560800000000000000
+      internalID: 7341962915637762699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_9
+      name: Main_Character_Walking_SW_9
       rect:
         serializedVersion: 2
-        x: 1799
-        y: 2
-        width: 187
-        height: 263
+        x: 204
+        y: 894
+        width: 179
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,20 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 520f77bb37972ccf0800000000000000
-      internalID: -233490692696444891
+      spriteID: 87f1904129fc4a0f0800000000000000
+      internalID: -1106531382117982344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_10
+      name: Main_Character_Walking_SW_10
       rect:
         serializedVersion: 2
-        x: 2006
-        y: 2
-        width: 187
-        height: 263
+        x: 398
+        y: 895
+        width: 178
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,20 +404,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90439edd756367880800000000000000
-      internalID: -8613637486286392311
+      spriteID: 4f7178e8361324d10800000000000000
+      internalID: 2108301879225554932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_11
+      name: Main_Character_Walking_SW_11
       rect:
         serializedVersion: 2
-        x: 2201
-        y: 0
-        width: 187
-        height: 265
+        x: 613
+        y: 892
+        width: 179
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5adcf9cdecd670ae0800000000000000
-      internalID: -1583176008765289051
+      spriteID: ee99351d436a352d0800000000000000
+      internalID: -3291104156897273362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_12
+      name: Main_Character_Walking_SW_12
       rect:
         serializedVersion: 2
-        x: 2418
-        y: 0
-        width: 187
-        height: 265
+        x: 16
+        y: 601
+        width: 179
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8907702a5d96f860800000000000000
-      internalID: 7563405634632616331
+      spriteID: 0303acefa9ac5f5f0800000000000000
+      internalID: -723449398074658768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_13
+      name: Main_Character_Walking_SW_13
       rect:
         serializedVersion: 2
-        x: 2620
-        y: 0
-        width: 187
-        height: 265
+        x: 209
+        y: 605
+        width: 179
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,20 +470,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c657163b675d27770800000000000000
-      internalID: 8607176543650805100
+      spriteID: 1794494bc18188c20800000000000000
+      internalID: 3208841246069246321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_14
+      name: Main_Character_Walking_SW_14
       rect:
         serializedVersion: 2
-        x: 2816
-        y: 0
-        width: 187
-        height: 265
+        x: 412
+        y: 607
+        width: 179
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,20 +492,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e14cc0a0ecdd4ff0800000000000000
-      internalID: -50141163502681623
+      spriteID: 19d6b95d5db876eb0800000000000000
+      internalID: -4726655533374018159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_15
+      name: Main_Character_Walking_SW_15
       rect:
         serializedVersion: 2
-        x: 3025
-        y: 2
-        width: 187
-        height: 263
+        x: 609
+        y: 607
+        width: 178
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,20 +514,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36369c4e7fb909150800000000000000
-      internalID: 5877369002716128099
+      spriteID: e4d63b5497ac2adc0800000000000000
+      internalID: -3629115727497958066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_16
+      name: Main_Character_Walking_SW_16
       rect:
         serializedVersion: 2
-        x: 3229
-        y: 0
-        width: 187
-        height: 265
+        x: 15
+        y: 332
+        width: 178
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5886a8a17f338160800000000000000
-      internalID: 7026529601021446239
+      spriteID: 9ed05972caa184290800000000000000
+      internalID: -7906039819148128791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_17
+      name: Main_Character_Walking_SW_17
       rect:
         serializedVersion: 2
-        x: 3430
-        y: 0
-        width: 187
-        height: 265
+        x: 209
+        y: 330
+        width: 179
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,20 +558,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b16e443d1d4ab920800000000000000
-      internalID: 3006800489050169779
+      spriteID: d4eb7bb344381c180800000000000000
+      internalID: -9096845443228778931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_18
+      name: Main_Character_Walking_SW_18
       rect:
         serializedVersion: 2
-        x: 3630
-        y: 0
-        width: 186
-        height: 265
+        x: 401
+        y: 329
+        width: 179
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,20 +580,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb1c8e7ee991081a0800000000000000
-      internalID: -6809414466297871940
+      spriteID: 34759792a8d0fba90800000000000000
+      internalID: -7296097984264448189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_19
+      name: Main_Character_Walking_SW_19
       rect:
         serializedVersion: 2
-        x: 3825
-        y: 0
-        width: 187
-        height: 265
+        x: 613
+        y: 328
+        width: 179
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -602,20 +602,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbc4e9be15e37a3f0800000000000000
-      internalID: -889673879816090437
+      spriteID: b41509ef4540f9410800000000000000
+      internalID: 1485911165150187851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_20
+      name: Main_Character_Walking_SW_20
       rect:
         serializedVersion: 2
-        x: 4020
-        y: 2
-        width: 186
-        height: 263
+        x: 10
+        y: 53
+        width: 178
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,20 +624,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cffbfd9cee13caf60800000000000000
-      internalID: 8046861535863095292
+      spriteID: 823b9ff68abd520d0800000000000000
+      internalID: -3448108423202622680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_21
+      name: Main_Character_Walking_SW_21
       rect:
         serializedVersion: 2
-        x: 4219
-        y: 2
-        width: 187
-        height: 263
+        x: 204
+        y: 52
+        width: 179
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,20 +646,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85bd26bd4ae85bf30800000000000000
-      internalID: 4590732233880558424
+      spriteID: e6beaee2b833b91a0800000000000000
+      internalID: -6801786139332383890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_22
+      name: Main_Character_Walking_SW_22
       rect:
         serializedVersion: 2
-        x: 4426
-        y: 2
-        width: 187
-        height: 263
+        x: 398
+        y: 53
+        width: 178
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,20 +668,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e21f2be1ef5b475e0800000000000000
-      internalID: -1912703838684253906
+      spriteID: 4966e033d92c1e920800000000000000
+      internalID: 3017907205737178772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Caracter_Walking_Left_Animation_23
+      name: Main_Character_Walking_SW_23
       rect:
         serializedVersion: 2
-        x: 4621
-        y: 0
-        width: 185
-        height: 265
+        x: 613
+        y: 50
+        width: 179
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,8 +690,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8d02f5e5226d3130800000000000000
-      internalID: 3548099996348976527
+      spriteID: 00e50afc247837c80800000000000000
+      internalID: -8326162565056930304
       vertices: []
       indices: 
       edges: []
@@ -710,30 +710,30 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main_Caracter_Walking_Left_Animation_0: 717631261649560623
-      Main_Caracter_Walking_Left_Animation_1: 1502036455664425969
-      Main_Caracter_Walking_Left_Animation_10: -8613637486286392311
-      Main_Caracter_Walking_Left_Animation_11: -1583176008765289051
-      Main_Caracter_Walking_Left_Animation_12: 7563405634632616331
-      Main_Caracter_Walking_Left_Animation_13: 8607176543650805100
-      Main_Caracter_Walking_Left_Animation_14: -50141163502681623
-      Main_Caracter_Walking_Left_Animation_15: 5877369002716128099
-      Main_Caracter_Walking_Left_Animation_16: 7026529601021446239
-      Main_Caracter_Walking_Left_Animation_17: 3006800489050169779
-      Main_Caracter_Walking_Left_Animation_18: -6809414466297871940
-      Main_Caracter_Walking_Left_Animation_19: -889673879816090437
-      Main_Caracter_Walking_Left_Animation_2: 1737850098025320401
-      Main_Caracter_Walking_Left_Animation_20: 8046861535863095292
-      Main_Caracter_Walking_Left_Animation_21: 4590732233880558424
-      Main_Caracter_Walking_Left_Animation_22: -1912703838684253906
-      Main_Caracter_Walking_Left_Animation_23: 3548099996348976527
-      Main_Caracter_Walking_Left_Animation_3: -1230139425165407873
-      Main_Caracter_Walking_Left_Animation_4: 2815280932381718189
-      Main_Caracter_Walking_Left_Animation_5: -6134178462058604062
-      Main_Caracter_Walking_Left_Animation_6: -2243915550698796332
-      Main_Caracter_Walking_Left_Animation_7: -3533991987336559023
-      Main_Caracter_Walking_Left_Animation_8: -5600802809594557839
-      Main_Caracter_Walking_Left_Animation_9: -233490692696444891
+      Main_Character_Walking_SW_0: -3591744950038398924
+      Main_Character_Walking_SW_1: 7712671032691703341
+      Main_Character_Walking_SW_10: 2108301879225554932
+      Main_Character_Walking_SW_11: -3291104156897273362
+      Main_Character_Walking_SW_12: -723449398074658768
+      Main_Character_Walking_SW_13: 3208841246069246321
+      Main_Character_Walking_SW_14: -4726655533374018159
+      Main_Character_Walking_SW_15: -3629115727497958066
+      Main_Character_Walking_SW_16: -7906039819148128791
+      Main_Character_Walking_SW_17: -9096845443228778931
+      Main_Character_Walking_SW_18: -7296097984264448189
+      Main_Character_Walking_SW_19: 1485911165150187851
+      Main_Character_Walking_SW_2: -6804816169057095269
+      Main_Character_Walking_SW_20: -3448108423202622680
+      Main_Character_Walking_SW_21: -6801786139332383890
+      Main_Character_Walking_SW_22: 3017907205737178772
+      Main_Character_Walking_SW_23: -8326162565056930304
+      Main_Character_Walking_SW_3: -8574688662898493462
+      Main_Character_Walking_SW_4: -6847655657808069738
+      Main_Character_Walking_SW_5: -8495378806274213313
+      Main_Character_Walking_SW_6: -7954365495729287017
+      Main_Character_Walking_SW_7: -1528957061641922814
+      Main_Character_Walking_SW_8: 7341962915637762699
+      Main_Character_Walking_SW_9: -1106531382117982344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

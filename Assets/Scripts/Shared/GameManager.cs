@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     string currentLevelName;
     public bool HasDiamond { get; private set; }
+    public static bool IsPaused { get; set; }
     public int LastLevelStars { get; private set; }
 
     void Awake()
