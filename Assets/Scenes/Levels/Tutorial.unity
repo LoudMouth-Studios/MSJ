@@ -4543,9 +4543,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTimer
   timerText: {fileID: 1440130556}
-  threeStarTime: 15
-  twoStarTime: 20
-  oneStarTime: 25
+  threeStarTime: 30
+  twoStarTime: 40
+  oneStarTime: 50
 --- !u!4 &766480907
 Transform:
   m_ObjectHideFlags: 0
