@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 78f36002a954d8147af56d3c791d0305
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8671696802253028680
+    second: Main_Character_Walking_NE_0
+  - first:
+      213: -7853645362828610811
+    second: Main_Character_Walking_NE_1
+  - first:
+      213: 5253955041556225603
+    second: Main_Character_Walking_NE_2
+  - first:
+      213: -5979247451468268788
+    second: Main_Character_Walking_NE_3
+  - first:
+      213: 6919460517614075617
+    second: Main_Character_Walking_NE_4
+  - first:
+      213: 7362418989755781679
+    second: Main_Character_Walking_NE_5
+  - first:
+      213: -8346864128137789021
+    second: Main_Character_Walking_NE_6
+  - first:
+      213: 1083010511997139814
+    second: Main_Character_Walking_NE_7
+  - first:
+      213: -1381235658924913301
+    second: Main_Character_Walking_NE_8
+  - first:
+      213: -788145725412737456
+    second: Main_Character_Walking_NE_9
+  - first:
+      213: -6661259750472968034
+    second: Main_Character_Walking_NE_10
+  - first:
+      213: -4235574290199873798
+    second: Main_Character_Walking_NE_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 881
+        width: 174
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b241d5f3b1f7a780800000000000000
+      internalID: -8671696802253028680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 879
+        width: 174
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503f4b4272f320390800000000000000
+      internalID: -7853645362828610811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 878
+        width: 173
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ed4dd064cc9e840800000000000000
+      internalID: 5253955041556225603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_3
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 878
+        width: 174
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bf21f4f12750da0800000000000000
+      internalID: -5979247451468268788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 623
+        width: 173
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee3abd0eacd60060800000000000000
+      internalID: 6919460517614075617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 626
+        width: 174
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22dbfb30119c2660800000000000000
+      internalID: 7362418989755781679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 627
+        width: 174
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a185ed8c4bf92c80800000000000000
+      internalID: -8346864128137789021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_7
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 629
+        width: 173
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b7a979250a70f00800000000000000
+      internalID: 1083010511997139814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 381
+        width: 174
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d8dae7c7dd4dce0800000000000000
+      internalID: -1381235658924913301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 383
+        width: 173
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ef78573a1ff05f0800000000000000
+      internalID: -788145725412737456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 381
+        width: 174
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e989370cc837e83a0800000000000000
+      internalID: -6661259750472968034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Character_Walking_NE_11
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 379
+        width: 173
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6fbd4cf973835c0800000000000000
+      internalID: -4235574290199873798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Main_Character_Walking_NE_0: -8671696802253028680
+      Main_Character_Walking_NE_1: -7853645362828610811
+      Main_Character_Walking_NE_10: -6661259750472968034
+      Main_Character_Walking_NE_11: -4235574290199873798
+      Main_Character_Walking_NE_2: 5253955041556225603
+      Main_Character_Walking_NE_3: -5979247451468268788
+      Main_Character_Walking_NE_4: 6919460517614075617
+      Main_Character_Walking_NE_5: 7362418989755781679
+      Main_Character_Walking_NE_6: -8346864128137789021
+      Main_Character_Walking_NE_7: 1083010511997139814
+      Main_Character_Walking_NE_8: -1381235658924913301
+      Main_Character_Walking_NE_9: -788145725412737456
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
