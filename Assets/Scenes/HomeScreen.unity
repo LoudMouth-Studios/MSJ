@@ -618,6 +618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653881486}
   - component: {fileID: 1653881485}
+  - component: {fileID: 1653881901}
   m_Layer: 0
   m_Name: Spot Light 2D
   m_TagString: Untagged
@@ -692,6 +693,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653881901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653881484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e4a6f2c8d94e3ab1f9d2c6a4e8f701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
 --- !u!1 &1735446839
 GameObject:
   m_ObjectHideFlags: 0
