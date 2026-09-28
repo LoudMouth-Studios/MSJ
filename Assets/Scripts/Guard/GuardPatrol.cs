@@ -3,6 +3,13 @@ using UnityEngine;
 
 public enum PatrolMode { Loop, PingPong }
 
+[System.Serializable]
+public class TurnPoint
+{
+    public Transform point;                          // must be one of this guard's waypoints
+    [Range(0f, 100f)] public float turnChance = 50f; // % chance to turn around here
+}
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class GuardPatrol : MonoBehaviour
 {
@@ -15,16 +22,13 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] GuardVision vision; // optional, wired in Step 5
     [SerializeField] Animator animator;
     
-    [Header("Random Reversal")]
-    [SerializeField] bool randomReverse = true;
-    [SerializeField] float minReverseInterval = 5f;
-    [SerializeField] float maxReverseInterval = 25f;
+    [Header("Turn-around Points")]
+    [SerializeField] TurnPoint[] turnPoints;
 
     Rigidbody2D rb;
     int currentIndex = 0;
     int direction = 1; // +1 forward, -1 backward (PingPong only)
     float waitTimer;
-    float reverseTimer;
     string currentAnimation;
 
     public Vector2 FacingDirection { get; private set; } = Vector2.down;
@@ -36,29 +40,22 @@ public class GuardPatrol : MonoBehaviour
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
         
-        reverseTimer = Random.Range(minReverseInterval, maxReverseInterval);
     }
     
-    void ReverseNow()
+    float GetTurnChance(Transform waypoint)
     {
-        int previousIndex = (currentIndex - direction + waypoints.Length) % waypoints.Length;
-        direction *= -1;
-        currentIndex = previousIndex;
+        if (turnPoints == null) return 0f;
+
+        foreach (TurnPoint tp in turnPoints)
+            if (tp != null && tp.point == waypoint)
+                return tp.turnChance;
+
+        return 0f; // not a turn point, never turns here
     }
 
     void FixedUpdate()
     {
         if (waypoints == null || waypoints.Length == 0) return;
-        
-        if (randomReverse && mode == PatrolMode.Loop)
-        {
-            reverseTimer -= Time.fixedDeltaTime;
-            if (reverseTimer <= 0f)
-            {
-                ReverseNow();
-                reverseTimer = Random.Range(minReverseInterval, maxReverseInterval);
-            }
-        }
 
         if (waitTimer > 0f)
         {
@@ -72,6 +69,11 @@ public class GuardPatrol : MonoBehaviour
         if (toTarget.magnitude <= waypointTolerance)
         {
             waitTimer = waitTimeAtPoint;
+
+            float chance = GetTurnChance(target);
+            if (chance > 0f && Random.value * 100f <= chance)
+                direction *= -1; // turn around: the next waypoint is the one we came from
+
             AdvanceIndex();
             return;
         }
@@ -134,6 +136,13 @@ public class GuardPatrol : MonoBehaviour
 
             if (next != null)
                 Gizmos.DrawLine(waypoints[i].position, next.position);
+        }
+        if (turnPoints != null)
+        {
+            Gizmos.color = Color.red;
+            foreach (TurnPoint tp in turnPoints)
+                if (tp != null && tp.point != null)
+                    Gizmos.DrawSphere(tp.point.position, 0.1f);
         }
     }
 }
