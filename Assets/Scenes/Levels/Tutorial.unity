@@ -6453,7 +6453,7 @@ GameObject:
   - component: {fileID: 977868520}
   - component: {fileID: 977868519}
   - component: {fileID: 977868522}
-  - component: {fileID: 977868521}
+  - component: {fileID: 977868523}
   m_Layer: 0
   m_Name: Power
   m_TagString: Untagged
@@ -6618,21 +6618,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &977868521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977868517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cef24e1ba8c48946871f7c020af6f25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PowerInteractable
-  diamondLights:
-  - {fileID: 1404133003}
-  - {fileID: 2105633486}
 --- !u!19719996 &977868522
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -6671,6 +6656,21 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &977868523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977868517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c69811a8a4ea0545a09cf57f4a4ed2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JunctionBox
+  diamondLights:
+  - {fileID: 1404133003}
+  - {fileID: 2105633486}
 --- !u!1 &999788636
 GameObject:
   m_ObjectHideFlags: 0
