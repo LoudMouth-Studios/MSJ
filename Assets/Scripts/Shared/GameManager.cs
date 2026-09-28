@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     string currentLevelName;
     public bool HasDiamond { get; private set; }
     public static bool IsPaused { get; set; }
+    public int LastLevelStars { get; private set; }
 
     void Awake()
     {
@@ -25,6 +26,11 @@ public class GameManager : MonoBehaviour
     public void CollectDiamond()
     {
         HasDiamond = true;
+    }
+    
+    public void SetLevelStars(int stars)
+    {
+        LastLevelStars = stars;
     }
 
     public void StartScreen()
