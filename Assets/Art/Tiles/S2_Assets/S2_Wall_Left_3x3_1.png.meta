@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 82bbb64b89060384597df0d6846fa4d0
+guid: 42588fa1ec30d53468d6293ac1cd53ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3635347168714154236
-    second: S2_Wall_Left_Door_0
+      213: 8176294067908862330
+    second: S2_Wall_Left_3x3_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,31 +100,27 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S2_Wall_Left_Door_0
+      name: S2_Wall_Left_3x3_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 513
-        height: 768
+        width: 128
+        height: 576
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -256.5, y: -384}
-        - {x: -126.5, y: -319}
-        - {x: -168.5, y: -250}
-        - {x: -256.5, y: -300}
-      - - {x: 128.5, y: -193}
-        - {x: 256.5, y: -129}
-        - {x: 256.5, y: -14}
-        - {x: 62.5, y: -128}
+      - - {x: -64, y: -288}
+        - {x: 64, y: -223}
+        - {x: 64, y: -215}
+        - {x: -64, y: -280}
       tessellationDetail: 0
       bones: []
-      spriteID: cf0ed623df8537230800000000000000
-      internalID: 3635347168714154236
+      spriteID: a7167d88228087170800000000000000
+      internalID: 8176294067908862330
       vertices: []
       indices: 
       edges: []
@@ -133,7 +129,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4058f0c932f9a9542b17d79e5c34a8ca
+    spriteID: 8e5f41a0c28a3b94cb271a68824011c8
     internalID: 0
     vertices: []
     indices: 
@@ -143,7 +139,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S2_Wall_Left_Door_0: 3635347168714154236
+      S2_Wall_Left_3x3_1_0: 8176294067908862330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
