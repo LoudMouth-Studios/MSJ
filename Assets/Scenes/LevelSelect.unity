@@ -522,6 +522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66ca9a5b54b0924d9740a8e4c647f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelSelect
+  zoomScale: 4
+  zoomDuration: 0.45
+  fadeDuration: 0.3
 --- !u!114 &1318988400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,6 +670,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66ca9a5b54b0924d9740a8e4c647f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelSelect
+  zoomScale: 4
+  zoomDuration: 0.45
+  fadeDuration: 0.3
 --- !u!114 &1333652966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723479540}
   - component: {fileID: 1723479539}
+  - component: {fileID: 1723479901}
   m_Layer: 0
   m_Name: Spot Light 2D
   m_TagString: Untagged
@@ -994,6 +1001,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723479901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723479538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e4a6f2c8d94e3ab1f9d2c6a4e8f701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
+  fadeInOnStart: 0
 --- !u!1 &1962666850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1962666852}
   - component: {fileID: 1962666851}
+  - component: {fileID: 1900000013}
   m_Layer: 0
   m_Name: Global Light 2D
   m_TagString: Untagged
@@ -1078,6 +1100,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900000013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962666850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e4a6f2c8d94e3ab1f9d2c6a4e8f701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
+  fadeInOnStart: 0
+--- !u!1 &1900000010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900000011}
+  - component: {fileID: 1900000012}
+  m_Layer: 0
+  m_Name: LevelSelectIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900000011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000010}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900000012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f5b7a3d9e84f2bb2fae3d7b5f9a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 1723479901}
+  globalLight: {fileID: 1900000013}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1088,3 +1170,4 @@ SceneRoots:
   - {fileID: 1723479540}
   - {fileID: 1543304379}
   - {fileID: 42514680}
+  - {fileID: 1900000011}

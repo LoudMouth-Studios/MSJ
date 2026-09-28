@@ -583,7 +583,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5459035781190447099, guid: ed1f5d932e85ddb4dbd4232e5648f08c, type: 3}
+  m_Sprite: {fileID: 1139523228358390534, guid: fea22de50f447e74d8b18caeb8958d29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -603,7 +603,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.396, y: 1.396, z: 1.396}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -618,6 +618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653881486}
   - component: {fileID: 1653881485}
+  - component: {fileID: 1653881901}
   m_Layer: 0
   m_Name: Spot Light 2D
   m_TagString: Untagged
@@ -692,6 +693,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653881901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653881484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e4a6f2c8d94e3ab1f9d2c6a4e8f701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
 --- !u!1 &1735446839
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +905,7 @@ RectTransform:
   m_GameObject: {fileID: 1779183522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1366386, y: 1.9007658, z: 0.96464}
+  m_LocalScale: {x: 1.1366386, y: 1.995804, z: 0.96464}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1288363193}
