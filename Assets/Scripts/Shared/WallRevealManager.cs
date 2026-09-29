@@ -42,7 +42,7 @@ public class WallRevealManager : MonoBehaviour
     private void Awake()
     {
         block = new MaterialPropertyBlock();
-        solidOnly = new ContactFilter2D().NoFilter();
+        solidOnly = ContactFilter2D.noFilter;
         solidOnly.useTriggers = false;
 
         foreach (var r in FindObjectsByType<TilemapRenderer>(FindObjectsSortMode.None))
