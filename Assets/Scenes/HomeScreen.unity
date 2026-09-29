@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 1
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1288363192
 Canvas:
   m_ObjectHideFlags: 0
@@ -425,8 +425,8 @@ Canvas:
   m_GameObject: {fileID: 1288363189}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 1735446843}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -437,7 +437,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1288363193
 RectTransform:
@@ -447,19 +447,19 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288363189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 847610557}
   - {fileID: 1779183523}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1593110734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 785.8455, y: 439.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1528841512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -583,7 +583,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5459035781190447099, guid: ed1f5d932e85ddb4dbd4232e5648f08c, type: 3}
+  m_Sprite: {fileID: 1139523228358390534, guid: fea22de50f447e74d8b18caeb8958d29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -605,7 +605,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1288363193}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653881484
@@ -618,6 +619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653881486}
   - component: {fileID: 1653881485}
+  - component: {fileID: 1653881901}
   m_Layer: 0
   m_Name: Spot Light 2D
   m_TagString: Untagged
@@ -692,6 +694,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653881901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653881484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e4a6f2c8d94e3ab1f9d2c6a4e8f701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
+  fadeInOnStart: 1
 --- !u!1 &1735446839
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,15 +907,15 @@ RectTransform:
   m_GameObject: {fileID: 1779183522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1366386, y: 1.9007658, z: 0.96464}
+  m_LocalScale: {x: 1.1366386, y: 1.995804, z: 0.96464}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1288363193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.572, y: -99.797}
-  m_SizeDelta: {x: 276.682, y: 64.843}
+  m_AnchoredPosition: {x: -6.29, y: -39.31}
+  m_SizeDelta: {x: 112.55, y: 25.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779183524
 MonoBehaviour:
@@ -970,7 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36765754, g: 0.43761134, b: 0.9622642, a: 0}
+  m_Color: {r: 0.36765754, g: 0.43761134, b: 0.9622642, a: 0.64705884}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1007,6 +1023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32122bed9f33a8428158d18992a7c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayButton
+  spotlight: {fileID: 0}
+  sceneFadeDuration: 0.6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1014,7 +1032,6 @@ SceneRoots:
   - {fileID: 1735446844}
   - {fileID: 39933156}
   - {fileID: 1653881486}
-  - {fileID: 1288363193}
   - {fileID: 16608313}
   - {fileID: 1528841512}
   - {fileID: 1593110734}

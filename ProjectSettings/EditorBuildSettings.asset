@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Defeat.unity
     guid: cac8d2e2e4025d748b7d55b7d0d8739b
   - enabled: 1
-    path: Assets/Scenes/Diamond stolen.unity
+    path: Assets/Scenes/Complete.unity
     guid: 372f61728ce4fb040b1d3cf6c9981ccb
   - enabled: 1
     path: Assets/Scenes/StartScene.unity

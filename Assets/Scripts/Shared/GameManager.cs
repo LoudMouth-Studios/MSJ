@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void FinishLevel()
     {
-        SceneManager.LoadScene("Diamond stolen");
+        SceneManager.LoadScene("Complete");
     }
     
     public void TriggerDefeat()
