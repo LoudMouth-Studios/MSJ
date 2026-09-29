@@ -8,46 +8,30 @@ public class WallRevealManager : MonoBehaviour
     private static readonly List<RevealSource> sources = new();
     public static void Register(RevealSource s) { if (!sources.Contains(s)) sources.Add(s); }
     public static void Unregister(RevealSource s) => sources.Remove(s);
-    private readonly List<Collider2D> wallShapes = new();
 
-    [Tooltip("Walls that should become see-through (use the WallReveal material on these).")]
-    [SerializeField] private Tilemap[] walls;
-    [SerializeField] private int checkSteps = 6;
-    [SerializeField] private float stepSize = 0.25f;
+    [Tooltip("Walls using this material become see-through.")]
+    [SerializeField] private Material revealMaterial;
     [SerializeField] private float fadeSpeed = 4f;
-
-    public float CheckDistance => checkSteps * stepSize;
-    
-    [SerializeField] private Material revealMaterial; // drag WallReveal_Mat in here (works in a prefab)
-
-    private void Awake()
-    {
-        if (walls == null || walls.Length == 0)
-        {
-            var found = new List<Tilemap>();
-            foreach (var r in FindObjectsByType<TilemapRenderer>(FindObjectsSortMode.None))
-            {
-                if (r.sharedMaterial == revealMaterial)
-                    found.Add(r.GetComponent<Tilemap>());
-            }
-            walls = found.ToArray();
-        }
-
-        wallShapes.Clear();
-        foreach (Tilemap w in walls)
-        {
-            if (w && w.TryGetComponent(out TilemapCollider2D shape))
-                wallShapes.Add(shape);
-            else if (w)
-                Debug.LogWarning($"WallReveal: '{w.name}' has no TilemapCollider2D, so it can't detect characters behind it.", w);
-        }
-    }
 
     private static readonly int PointsId = Shader.PropertyToID("_RevealPoints");
     private static readonly int ShapeId  = Shader.PropertyToID("_RevealShape");
     private static readonly int CountId  = Shader.PropertyToID("_RevealCount");
     private readonly Vector4[] points = new Vector4[Max];
     private readonly Vector4[] shape  = new Vector4[Max];
+    private readonly List<Collider2D> wallShapes = new();
+
+    private void Awake()
+    {
+        foreach (var r in FindObjectsByType<TilemapRenderer>(FindObjectsSortMode.None))
+        {
+            if (r.sharedMaterial != revealMaterial) continue;
+
+            if (r.TryGetComponent(out TilemapCollider2D wallShape))
+                wallShapes.Add(wallShape);
+            else
+                Debug.LogWarning($"WallReveal: '{r.name}' has no TilemapCollider2D, so it can't detect characters behind it.", r);
+        }
+    }
 
     private void Update()
     {
@@ -69,12 +53,12 @@ public class WallRevealManager : MonoBehaviour
         Shader.SetGlobalFloat(CountId, n);
     }
 
-    // Looks straight down (on screen) from the feet: a wall tile there means the wall is in front.
+    // Behind the wall = the feet are inside the wall sprite's shape (the wall is drawn over them).
     private bool IsBehindWall(Vector2 feet)
     {
-        foreach (Collider2D shape in wallShapes)
+        foreach (Collider2D wallShape in wallShapes)
         {
-            if (shape.OverlapPoint(feet)) return true;
+            if (wallShape.OverlapPoint(feet)) return true;
         }
         return false;
     }

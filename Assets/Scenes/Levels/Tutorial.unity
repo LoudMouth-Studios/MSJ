@@ -5856,9 +5856,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 746190560}
-  radius: 2
-  innerFraction: 0
-  falloffPower: 1.5
   feetOffset: {x: 0, y: -0.58}
   strength: 0
 --- !u!1 &962515645
@@ -27916,9 +27913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 576445633}
-  radius: 2
-  innerFraction: 0
-  falloffPower: 1.5
   feetOffset: {x: -0, y: -0.58}
   strength: 0
 --- !u!1 &1940903565
@@ -28586,9 +28580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 1821024464}
-  radius: 2
-  innerFraction: 0
-  falloffPower: 1.5
   feetOffset: {x: 0, y: -0.58}
   strength: 0
 --- !u!1001 &1880790901146986376
