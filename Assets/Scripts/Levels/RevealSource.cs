@@ -9,8 +9,6 @@ public class RevealSource : MonoBehaviour
     [Tooltip("Offset from this object's pivot to its feet.")]
     public Vector2 feetOffset;
 
-    [HideInInspector] public float strength; // 0 = no hole, 1 = full hole
-
     public Vector2 Center => matchLight.transform.position;
     public Vector2 Feet => (Vector2)transform.position + feetOffset;
     public float Radius => matchLight.pointLightOuterRadius;
@@ -24,5 +22,7 @@ public class RevealSource : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(Feet, 0.05f);
+        var manager = FindFirstObjectByType<WallRevealManager>();
+        if (manager) Gizmos.DrawLine(Feet, Feet + Vector2.down * manager.WallHeight);
     }
 }
