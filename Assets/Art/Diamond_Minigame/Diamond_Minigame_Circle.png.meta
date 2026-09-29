@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 9c1d01cd57962f44ca0c19faf6ea9645
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3956071061297383786
+    second: Diamond_Minigame_Circle_0
+  - first:
+      213: -8772173875498578122
+    second: Diamond_Minigame_Circle_1
+  - first:
+      213: -584013983936957111
+    second: Diamond_Minigame_Circle_2
+  - first:
+      213: 5723729998744265753
+    second: Diamond_Minigame_Circle_3
+  - first:
+      213: 6385785795573131057
+    second: Diamond_Minigame_Circle_4
+  - first:
+      213: -5370825505032975035
+    second: Diamond_Minigame_Circle_5
+  - first:
+      213: 4788459537979565843
+    second: Diamond_Minigame_Circle_6
+  - first:
+      213: -2524791563955451087
+    second: Diamond_Minigame_Circle_7
+  - first:
+      213: 7899903622405663765
+    second: Diamond_Minigame_Circle_8
+  - first:
+      213: 7577446530458344286
+    second: Diamond_Minigame_Circle_9
+  - first:
+      213: 4165353939617717007
+    second: Diamond_Minigame_Circle_10
+  - first:
+      213: -4040809255127878543
+    second: Diamond_Minigame_Circle_11
+  - first:
+      213: -237796643844505070
+    second: Diamond_Minigame_Circle_12
+  - first:
+      213: 2937794941005787818
+    second: Diamond_Minigame_Circle_13
+  - first:
+      213: -3614924296104425799
+    second: Diamond_Minigame_Circle_14
+  - first:
+      213: -2032000797570081690
+    second: Diamond_Minigame_Circle_15
+  - first:
+      213: 7196240741025098049
+    second: Diamond_Minigame_Circle_16
+  - first:
+      213: -8076229094106518789
+    second: Diamond_Minigame_Circle_17
+  - first:
+      213: 6926967879863209148
+    second: Diamond_Minigame_Circle_18
+  - first:
+      213: 6708180565433683479
+    second: Diamond_Minigame_Circle_19
+  - first:
+      213: 3439948652962229801
+    second: Diamond_Minigame_Circle_20
+  - first:
+      213: 7241247332125624413
+    second: Diamond_Minigame_Circle_21
+  - first:
+      213: -7019702233135066966
+    second: Diamond_Minigame_Circle_22
+  - first:
+      213: -2290117585272370753
+    second: Diamond_Minigame_Circle_23
+  - first:
+      213: -2786178809309832408
+    second: Diamond_Minigame_Circle_24
+  - first:
+      213: 2863601442582833892
+    second: Diamond_Minigame_Circle_25
+  - first:
+      213: -6356898553473336501
+    second: Diamond_Minigame_Circle_26
+  - first:
+      213: -4211345064113010227
+    second: Diamond_Minigame_Circle_27
+  - first:
+      213: -5694152764429118558
+    second: Diamond_Minigame_Circle_28
+  - first:
+      213: 3546367402205818190
+    second: Diamond_Minigame_Circle_29
+  - first:
+      213: 4045079291199577334
+    second: Diamond_Minigame_Circle_30
+  - first:
+      213: 7228471838298517345
+    second: Diamond_Minigame_Circle_31
+  - first:
+      213: 4825194694895724710
+    second: Diamond_Minigame_Circle_32
+  - first:
+      213: 6896935889264927957
+    second: Diamond_Minigame_Circle_33
+  - first:
+      213: -8094585920200545234
+    second: Diamond_Minigame_Circle_34
+  - first:
+      213: 5372653658128879716
+    second: Diamond_Minigame_Circle_35
+  - first:
+      213: 651849168118576745
+    second: Diamond_Minigame_Circle_36
+  - first:
+      213: -5920179049899984767
+    second: Diamond_Minigame_Circle_37
+  - first:
+      213: 9130348769348862799
+    second: Diamond_Minigame_Circle_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 608
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696ba2574563919c0800000000000000
+      internalID: -3956071061297383786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 613
+        width: 33
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f02f2565af24680800000000000000
+      internalID: -8772173875498578122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 608
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945b397306a25e7f0800000000000000
+      internalID: -584013983936957111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 594
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9142665bb16ce6f40800000000000000
+      internalID: 5723729998744265753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_4
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 595
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1372fd4095ede9850800000000000000
+      internalID: 6385785795573131057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 574
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dc6e5b8aef675b0800000000000000
+      internalID: -5370825505032975035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 574
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3176a965496047240800000000000000
+      internalID: 4788459537979565843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 547
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b4882137326fcd0800000000000000
+      internalID: -2524791563955451087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 547
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51caf453d7812ad60800000000000000
+      internalID: 7899903622405663765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_9
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 514
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b5c70f87f782960800000000000000
+      internalID: 7577446530458344286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 514
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b10bec65f4ec930800000000000000
+      internalID: 4165353939617717007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 476
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174fdfe34692ce7c0800000000000000
+      internalID: -4040809255127878543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_12
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 476
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2124eda563d23bcf0800000000000000
+      internalID: -237796643844505070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 433
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2f6990fe425c820800000000000000
+      internalID: 2937794941005787818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_14
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 434
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b644c0618535ddc0800000000000000
+      internalID: -3614924296104425799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 388
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c56856a02ecc3e0800000000000000
+      internalID: -2032000797570081690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_16
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 389
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149aefe93de2ed360800000000000000
+      internalID: 7196240741025098049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 341
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa2b19bd687bef80800000000000000
+      internalID: -8076229094106518789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_18
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 342
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc89c90698812060800000000000000
+      internalID: 6926967879863209148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_19
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 293
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e8adbceae381d50800000000000000
+      internalID: 6708180565433683479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_20
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 294
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ea56103172dbf20800000000000000
+      internalID: 3439948652962229801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_21
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 246
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58c71235141e7460800000000000000
+      internalID: 7241247332125624413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_22
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 247
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0d7fcc202059e90800000000000000
+      internalID: -7019702233135066966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 201
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb907f3903ed730e0800000000000000
+      internalID: -2290117585272370753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_24
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 202
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bdd5e72218559d0800000000000000
+      internalID: -2786178809309832408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 159
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea227b075e8db720800000000000000
+      internalID: 2863601442582833892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_26
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 159
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bf6072272c7c7a0800000000000000
+      internalID: -6356898553473336501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_27
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 121
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc903f21afb4e85c0800000000000000
+      internalID: -4211345064113010227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_28
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 121
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3d46bca3e4af0b0800000000000000
+      internalID: -5694152764429118558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_29
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 88
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4da083ec5a373130800000000000000
+      internalID: 3546367402205818190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_30
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 88
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc5d300f22032830800000000000000
+      internalID: 4045079291199577334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 61
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fa2beb6d0b05460800000000000000
+      internalID: 7228471838298517345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_32
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 61
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8eb51920986f240800000000000000
+      internalID: 4825194694895724710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 41
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4674656a6d6bf50800000000000000
+      internalID: 6896935889264927957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_34
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 27
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c61961ef04aaf80800000000000000
+      internalID: -8094585920200545234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_35
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 27
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46099f959008f8a40800000000000000
+      internalID: 5372653658128879716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_36
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 41
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96677d06d55db0900800000000000000
+      internalID: 651849168118576745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_37
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 22
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1887004458c47dda0800000000000000
+      internalID: -5920179049899984767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_Minigame_Circle_38
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 22
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43c670c4d385be70800000000000000
+      internalID: 9130348769348862799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Diamond_Minigame_Circle_0: -3956071061297383786
+      Diamond_Minigame_Circle_1: -8772173875498578122
+      Diamond_Minigame_Circle_10: 4165353939617717007
+      Diamond_Minigame_Circle_11: -4040809255127878543
+      Diamond_Minigame_Circle_12: -237796643844505070
+      Diamond_Minigame_Circle_13: 2937794941005787818
+      Diamond_Minigame_Circle_14: -3614924296104425799
+      Diamond_Minigame_Circle_15: -2032000797570081690
+      Diamond_Minigame_Circle_16: 7196240741025098049
+      Diamond_Minigame_Circle_17: -8076229094106518789
+      Diamond_Minigame_Circle_18: 6926967879863209148
+      Diamond_Minigame_Circle_19: 6708180565433683479
+      Diamond_Minigame_Circle_2: -584013983936957111
+      Diamond_Minigame_Circle_20: 3439948652962229801
+      Diamond_Minigame_Circle_21: 7241247332125624413
+      Diamond_Minigame_Circle_22: -7019702233135066966
+      Diamond_Minigame_Circle_23: -2290117585272370753
+      Diamond_Minigame_Circle_24: -2786178809309832408
+      Diamond_Minigame_Circle_25: 2863601442582833892
+      Diamond_Minigame_Circle_26: -6356898553473336501
+      Diamond_Minigame_Circle_27: -4211345064113010227
+      Diamond_Minigame_Circle_28: -5694152764429118558
+      Diamond_Minigame_Circle_29: 3546367402205818190
+      Diamond_Minigame_Circle_3: 5723729998744265753
+      Diamond_Minigame_Circle_30: 4045079291199577334
+      Diamond_Minigame_Circle_31: 7228471838298517345
+      Diamond_Minigame_Circle_32: 4825194694895724710
+      Diamond_Minigame_Circle_33: 6896935889264927957
+      Diamond_Minigame_Circle_34: -8094585920200545234
+      Diamond_Minigame_Circle_35: 5372653658128879716
+      Diamond_Minigame_Circle_36: 651849168118576745
+      Diamond_Minigame_Circle_37: -5920179049899984767
+      Diamond_Minigame_Circle_38: 9130348769348862799
+      Diamond_Minigame_Circle_4: 6385785795573131057
+      Diamond_Minigame_Circle_5: -5370825505032975035
+      Diamond_Minigame_Circle_6: 4788459537979565843
+      Diamond_Minigame_Circle_7: -2524791563955451087
+      Diamond_Minigame_Circle_8: 7899903622405663765
+      Diamond_Minigame_Circle_9: 7577446530458344286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
