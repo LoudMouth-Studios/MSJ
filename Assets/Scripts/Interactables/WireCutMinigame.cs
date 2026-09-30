@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class WireCutMinigame : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class WireCutMinigame : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject minigamePanel;
     [SerializeField] private Transform wireContainer;
+
+    private int triesLeft;
+    
+    [Header("Text")]
+    [SerializeField] private TMP_Text wireText;
+
+    private string correctWire;
 
     [Header("Wire")]
     [SerializeField] private GameObject wireButtonPrefab;
@@ -39,7 +47,7 @@ public class WireCutMinigame : MonoBehaviour
 
         minigamePanel.SetActive(false);
     }
-
+    
     public void Open(PowerInteractable power)
     {
         if (power == null)
@@ -49,7 +57,31 @@ public class WireCutMinigame : MonoBehaviour
 
         minigamePanel.SetActive(true);
 
+        triesLeft = 2;
+        GenerateWireText();
         CreateWires();
+    }
+
+    private void GenerateWireText()
+    {
+        string[] colors = { "RED", "YELLOW", "GREEN", "BLUE" };
+
+        // Randomly select the correct wire.
+        int wireIndex = Random.Range(0, colors.Length);
+        correctWire = colors[wireIndex];
+
+        // Randomly select a different text color.
+        int textColorIndex = Random.Range(0, colors.Length - 1);
+
+        if (textColorIndex >= wireIndex)
+        {
+            textColorIndex++;
+        }
+
+        string textColor = colors[textColorIndex].ToLower();
+
+        // Update the displayed text.
+        wireText.text = $"CUT THE <color={textColor}>{correctWire}</color> WIRE";
     }
 
     private void CreateWires()
@@ -98,7 +130,7 @@ public class WireCutMinigame : MonoBehaviour
 
     private void CutWire(string selectedWire)
     {
-        if (selectedWire == "Red")
+        if (selectedWire.ToUpper() == correctWire)
         {
             Success();
         }
@@ -124,9 +156,16 @@ public class WireCutMinigame : MonoBehaviour
 
     private void Defeat()
     {
-        currentPower = null;
+        if (triesLeft == 0)
+        {
+            currentPower = null;
 
-        SceneManager.LoadScene(defeatSceneName);
+            SceneManager.LoadScene(defeatSceneName);
+        }
+        else
+        {
+            triesLeft--;
+        }
     }
 
     private void ClearWires()
