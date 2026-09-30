@@ -48,9 +48,7 @@ public class LightPatternMinigame : MonoBehaviour
             return;
 
         currentJunctionBox = junctionBox;
-
-        // For now this is the pattern.
-        // Later we will get this from the note.
+        
         correctPattern = new bool[]
         {
             true,
