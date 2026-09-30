@@ -921,101 +921,6 @@ Transform:
   - {fileID: 1956944643}
   m_Father: {fileID: 838114285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &151723546
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 151723547}
-  - component: {fileID: 151723548}
-  m_Layer: 0
-  m_Name: Door_Collider (1)
-  m_TagString: sortcol
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &151723547
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151723546}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.023653999, w: 0.9997202}
-  m_LocalPosition: {x: 9.05, y: 6.03, z: 0}
-  m_LocalScale: {x: -1.1875, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 561020198}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.711}
---- !u!60 &151723548
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151723546}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 6.2858114, y: 11.850589}
-      - {x: 6.405743, y: 8.863682}
-      - {x: 7.7355995, y: 7.9331617}
-      - {x: 7.69662, y: 8.87425}
-      - {x: 7.6644783, y: 9.2230425}
-      - {x: 7.7975907, y: 9.127089}
-      - {x: 7.7571545, y: 9.125059}
-      - {x: 8.009378, y: 8.999015}
-      - {x: 8.253974, y: 8.867524}
-      - {x: 8.534411, y: 8.761931}
-      - {x: 8.777307, y: 8.622032}
-      - {x: 8.997511, y: 8.523826}
-      - {x: 8.99399, y: 7.69139}
-      - {x: 9.011061, y: 7.496793}
-      - {x: 9.8916445, y: 7.0391235}
-      - {x: 9.773405, y: 10.03395}
-  m_UseDelaunayMesh: 1
 --- !u!4 &160377537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1625092392670183014, guid: 0ee42fda972975a4da73b2b229e406f5, type: 3}
@@ -1465,7 +1370,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5078125, y: 5.5, z: 0}
@@ -2369,7 +2274,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -3349,7 +3254,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -5125,6 +5030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 909169140}
   feetOffset: {x: 0, y: -0.58}
+  playerRenderer: {fileID: 0}
+  sortingOffset: 1
 --- !u!1 &543116382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5603,9 +5510,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1408964363}
-  - {fileID: 151723547}
+  m_Children: []
   m_Father: {fileID: 1931313241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &561020199
@@ -5655,7 +5560,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5078125, y: 5.5, z: 0}
@@ -5820,101 +5725,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1 &592486827
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 592486828}
-  - component: {fileID: 592486829}
-  m_Layer: 0
-  m_Name: Door_Collider (1)
-  m_TagString: sortcol
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &592486828
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592486827}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.99, y: 5.51, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2096474727}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &592486829
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592486827}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 6.0100965, y: 11.992708}
-      - {x: 6.0434747, y: 8.995501}
-      - {x: 7.5187964, y: 7.998832}
-      - {x: 7.50036, y: 8.863215}
-      - {x: 7.504579, y: 9.286721}
-      - {x: 7.6100783, y: 9.225549}
-      - {x: 7.7571545, y: 9.125059}
-      - {x: 8.009378, y: 8.999015}
-      - {x: 8.253974, y: 8.867524}
-      - {x: 8.534411, y: 8.761931}
-      - {x: 8.777307, y: 8.622032}
-      - {x: 8.997511, y: 8.523826}
-      - {x: 8.99399, y: 7.69139}
-      - {x: 9.011061, y: 7.496793}
-      - {x: 9.999061, y: 6.9853754}
-      - {x: 10.003477, y: 10.003405}
-  m_UseDelaunayMesh: 1
 --- !u!1 &602804425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7153,7 +6963,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5078125, y: 5.5, z: 0}
@@ -7769,7 +7579,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -8
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5, y: 4, z: 0}
@@ -8039,7 +7849,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -9544,7 +9354,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -10830,7 +10640,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -11561,6 +11371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 797438801}
   feetOffset: {x: 0, y: -0.58}
+  playerRenderer: {fileID: 0}
+  sortingOffset: 1
 --- !u!1 &1089471907
 GameObject:
   m_ObjectHideFlags: 0
@@ -11642,7 +11454,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -12371,7 +12183,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -12647,7 +12459,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -13422,7 +13234,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -13680,7 +13492,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -14011,7 +13823,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5, y: 0, z: 0}
@@ -29585,101 +29397,6 @@ Transform:
   - {fileID: 1931313241}
   m_Father: {fileID: 496820868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1408964362
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1408964363}
-  - component: {fileID: 1408964364}
-  m_Layer: 0
-  m_Name: Door_Collider
-  m_TagString: sortcol
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1408964363
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408964362}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.023653999, w: 0.9997202}
-  m_LocalPosition: {x: 14.04, y: 8.52, z: 0}
-  m_LocalScale: {x: -1.1875, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 561020198}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.711}
---- !u!60 &1408964364
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408964362}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 6.2858114, y: 11.850589}
-      - {x: 6.405743, y: 8.863682}
-      - {x: 7.7355995, y: 7.9331617}
-      - {x: 7.69662, y: 8.87425}
-      - {x: 7.6644783, y: 9.2230425}
-      - {x: 7.7975907, y: 9.127089}
-      - {x: 7.7571545, y: 9.125059}
-      - {x: 8.009378, y: 8.999015}
-      - {x: 8.253974, y: 8.867524}
-      - {x: 8.534411, y: 8.761931}
-      - {x: 8.777307, y: 8.622032}
-      - {x: 8.997511, y: 8.523826}
-      - {x: 8.99399, y: 7.69139}
-      - {x: 9.011061, y: 7.496793}
-      - {x: 9.8916445, y: 7.0391235}
-      - {x: 9.773405, y: 10.03395}
-  m_UseDelaunayMesh: 1
 --- !u!1001 &1448874973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29816,6 +29533,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 286214969}
   feetOffset: {x: 0, y: -0.58}
+  playerRenderer: {fileID: 0}
+  sortingOffset: 1
 --- !u!1 &1463898593
 GameObject:
   m_ObjectHideFlags: 0
@@ -30629,101 +30348,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1596772269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1596772270}
-  - component: {fileID: 1596772271}
-  m_Layer: 0
-  m_Name: Door_Collider
-  m_TagString: sortcol
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1596772270
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596772269}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 8.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2096474727}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1596772271
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596772269}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 6.0100965, y: 11.992708}
-      - {x: 6.0434747, y: 8.995501}
-      - {x: 7.5187964, y: 7.998832}
-      - {x: 7.50036, y: 8.863215}
-      - {x: 7.504579, y: 9.286721}
-      - {x: 7.6100783, y: 9.225549}
-      - {x: 7.7571545, y: 9.125059}
-      - {x: 8.009378, y: 8.999015}
-      - {x: 8.253974, y: 8.867524}
-      - {x: 8.534411, y: 8.761931}
-      - {x: 8.777307, y: 8.622032}
-      - {x: 8.997511, y: 8.523826}
-      - {x: 8.99399, y: 7.69139}
-      - {x: 9.011061, y: 7.496793}
-      - {x: 9.999061, y: 6.9853754}
-      - {x: 10.003477, y: 10.003405}
-  m_UseDelaunayMesh: 1
 --- !u!1 &1606870882
 GameObject:
   m_ObjectHideFlags: 0
@@ -30836,7 +30460,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5078125, y: 5.5, z: 0}
@@ -31157,7 +30781,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -32388,7 +32012,7 @@ MonoBehaviour:
   moveSpeed: 3
   _animator: {fileID: 0}
   _renderer: {fileID: 1700290152}
-  sortbehind: 7
+  sortbehind: 10
   sortdefault: 10
   playerFloor: {fileID: 1279060901}
 --- !u!212 &1700290152
@@ -32438,7 +32062,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 14
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1423107221590203529, guid: 43f4846a7345fba49bc3f384de2d90c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32550,6 +32174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 1352309759}
   feetOffset: {x: 0, y: -0.58}
+  playerRenderer: {fileID: 0}
+  sortingOffset: 1
 --- !u!1001 &1700531182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33432,7 +33058,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -36431,6 +36057,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1204570439794869807, guid: 7dac90fe42d1582408cdd9e8f0abcd0c, type: 3}
+      propertyPath: wallHeight
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2495244682701114218, guid: 7dac90fe42d1582408cdd9e8f0abcd0c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.13
@@ -36511,9 +36141,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1596772270}
-  - {fileID: 592486828}
+  m_Children: []
   m_Father: {fileID: 1931313241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &2096474728
@@ -36601,7 +36229,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.5, y: 5.5, z: 0}
@@ -37129,6 +36757,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 223959193}
   feetOffset: {x: 0, y: -0.58}
+  playerRenderer: {fileID: 0}
+  sortingOffset: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
