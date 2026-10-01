@@ -262,10 +262,10 @@ MonoBehaviour:
   playerFloor: {fileID: 0}
   topFloorObstacles:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 72
   bottomFloorObstacles:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   checkFeetEdges: 0
   target: {fileID: 0}
 --- !u!61 &7707606574144629030
@@ -350,3 +350,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 8373792637744364468}
   feetOffset: {x: 0, y: -0.58}
+  playerRenderer: {fileID: 0}
+  sortingOffset: 1
