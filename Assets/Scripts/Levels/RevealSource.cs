@@ -19,6 +19,11 @@ public class RevealSource : MonoBehaviour
 
     [Tooltip("Hoeveel sorting orders de player achter de muur komt.")]
     [SerializeField] private int sortingOffset = 1;
+    
+    [Tooltip("Voor objecten zonder PlayerMovement (bijv. guards). Laat leeg om automatisch te zoeken.")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    private int defaultSortingOrder;
 
 
     public Vector2 Center
@@ -96,42 +101,53 @@ public class RevealSource : MonoBehaviour
 
         if (playerMovement == null)
         {
-            Debug.LogWarning(
-                $"RevealSource '{name}' heeft geen PlayerMovement gevonden.",
-                this
-            );
-        }
+            if (spriteRenderer == null)
+                spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
-        if (matchLight == null)
-        {
-            Debug.LogWarning(
-                $"RevealSource '{name}' heeft geen Light2D ingesteld.",
-                this
-            );
+            if (spriteRenderer == null)
+                spriteRenderer = GetComponentInParent<SpriteRenderer>();
+
+            if (spriteRenderer != null)
+            {
+                defaultSortingOrder = spriteRenderer.sortingOrder;
+            }
+            else
+            {
+                Debug.LogWarning(
+                    $"RevealSource '{name}' heeft geen PlayerMovement of SpriteRenderer gevonden.",
+                    this
+                );
+            }
         }
     }
 
 
     public void SetBehindWall(int wallSortingOrder)
     {
-        if (playerMovement == null)
-            return;
-
-        int playerSortingOrder =
+        int sortingOrder =
             wallSortingOrder - sortingOffset;
 
-        playerMovement.SetRevealSorting(
-            playerSortingOrder
-        );
+        if (playerMovement != null)
+        {
+            playerMovement.SetRevealSorting(sortingOrder);
+            return;
+        }
+
+        if (spriteRenderer != null)
+            spriteRenderer.sortingOrder = sortingOrder;
     }
 
 
     public void SetNormalSorting()
     {
-        if (playerMovement == null)
+        if (playerMovement != null)
+        {
+            playerMovement.ClearRevealSorting();
             return;
+        }
 
-        playerMovement.ClearRevealSorting();
+        if (spriteRenderer != null)
+            spriteRenderer.sortingOrder = defaultSortingOrder;
     }
 
 
