@@ -1,0 +1,218 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class LightPatternMinigame : MonoBehaviour
+{
+    public static LightPatternMinigame Instance { get; private set; }
+
+    [Header("UI")]
+    [SerializeField] private GameObject minigamePanel;
+    [SerializeField] private Transform switchContainer;
+    [SerializeField] private TMP_Text attemptsText;
+
+    [Header("Switch")]
+    [SerializeField] private GameObject switchPrefab;
+
+    [Header("Switch Visuals")]
+    [SerializeField] private Sprite switchOnSprite;
+    [SerializeField] private Sprite switchOffSprite;
+
+    [Header("Defeat")]
+    [SerializeField] private string defeatSceneName = "Defeat";
+
+    private bool[] correctPattern;
+    private bool[] playerPattern;
+
+    private int attempts;
+
+    private JunctionBox currentJunctionBox;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
+        minigamePanel.SetActive(false);
+    }
+
+    public void Open(JunctionBox junctionBox)
+    {
+        if (junctionBox == null)
+            return;
+
+        currentJunctionBox = junctionBox;
+        
+        correctPattern = new bool[]
+        {
+            true,
+            false,
+            true,
+            false,
+            false
+        };
+
+        attempts = 0;
+
+        minigamePanel.SetActive(true);
+
+        CreateSwitches();
+
+        UpdateAttemptsText();
+    }
+
+    private void CreateSwitches()
+    {
+        ClearSwitches();
+
+        playerPattern = new bool[correctPattern.Length];
+
+        for (int i = 0; i < correctPattern.Length; i++)
+        {
+            CreateSwitch(i);
+        }
+    }
+
+    private void CreateSwitch(int index)
+    {
+        GameObject switchObject = Instantiate(
+            switchPrefab,
+            switchContainer
+        );
+
+        Button button = switchObject.GetComponent<Button>();
+        Image image = switchObject.GetComponent<Image>();
+
+        SetSwitchVisual(image, false);
+
+        if (button != null)
+        {
+            button.onClick.AddListener(() =>
+            {
+                ToggleSwitch(index, image);
+            });
+        }
+    }
+
+    private void ToggleSwitch(int index, Image image)
+    {
+        playerPattern[index] = !playerPattern[index];
+
+        SetSwitchVisual(image, playerPattern[index]);
+    }
+
+    private void SetSwitchVisual(Image image, bool isOn)
+    {
+        if (image == null)
+            return;
+
+        image.sprite = isOn
+            ? switchOnSprite
+            : switchOffSprite;
+    }
+
+    public void CheckPattern()
+    {
+        if (playerPattern == null)
+            return;
+
+        if (IsCorrectPattern())
+        {
+            Success();
+        }
+        else
+        {
+            WrongPattern();
+        }
+    }
+
+    private bool IsCorrectPattern()
+    {
+        if (playerPattern.Length != correctPattern.Length)
+            return false;
+
+        for (int i = 0; i < playerPattern.Length; i++)
+        {
+            if (playerPattern[i] != correctPattern[i])
+                return false;
+        }
+
+        return true;
+    }
+
+    private void WrongPattern()
+    {
+        attempts++;
+
+        UpdateAttemptsText();
+
+        if (attempts >= 3)
+        {
+            Defeat();
+            return;
+        }
+
+        ResetSwitches();
+    }
+
+    private void ResetSwitches()
+    {
+        for (int i = 0; i < playerPattern.Length; i++)
+        {
+            playerPattern[i] = false;
+        }
+
+        foreach (Transform child in switchContainer)
+        {
+            Image image = child.GetComponent<Image>();
+
+            if (image != null)
+            {
+                SetSwitchVisual(image, false);
+            }
+        }
+    }
+
+    private void Success()
+    {
+        ClearSwitches();
+
+        minigamePanel.SetActive(false);
+
+        if (currentJunctionBox != null)
+        {
+            currentJunctionBox.MinigameCompleted();
+        }
+
+        currentJunctionBox = null;
+    }
+
+    private void Defeat()
+    {
+        currentJunctionBox = null;
+
+        SceneManager.LoadScene(defeatSceneName);
+    }
+
+    private void UpdateAttemptsText()
+    {
+        if (attemptsText != null)
+        {
+            attemptsText.text = "Mistakes: " + attempts + " / 3";
+        }
+    }
+
+    private void ClearSwitches()
+    {
+        foreach (Transform child in switchContainer)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+}
