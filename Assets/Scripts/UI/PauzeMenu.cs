@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PauzeMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuPanel;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
 
     private bool isPaused;
 
@@ -11,6 +14,18 @@ public class PauzeMenu : MonoBehaviour
     {
         if (pauseMenuPanel != null)
             pauseMenuPanel.SetActive(false);
+
+        if (musicSlider != null)
+        {
+            musicSlider.SetValueWithoutNotify(VolumeManager.GetInstance().MusicVolume);
+            musicSlider.onValueChanged.AddListener(VolumeManager.GetInstance().SetMusicVolume);
+        }
+
+        if (sfxSlider != null)
+        {
+            sfxSlider.SetValueWithoutNotify(VolumeManager.GetInstance().SFXVolume);
+            sfxSlider.onValueChanged.AddListener(VolumeManager.GetInstance().SetSFXVolume);
+        }
     }
 
     void Update()
