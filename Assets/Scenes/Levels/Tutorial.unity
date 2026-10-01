@@ -3657,8 +3657,8 @@ MonoBehaviour:
   glass1: {fileID: 513868570}
   glass2: {fileID: 819780369}
   glass3: {fileID: 536256799}
-  glass2Threshold: 10
-  glass3Threshold: 20
+  glass2Threshold: 2
+  glass3Threshold: 4
   requiredTaps: 5
 --- !u!1001 &422407526
 PrefabInstance:
