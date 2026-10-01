@@ -11,15 +11,14 @@ public class RevealSource : MonoBehaviour
     [Tooltip("Offset from this object's pivot to its feet.")]
     [SerializeField] private Vector2 feetOffset;
 
+
     [Header("Player Sorting")]
 
-    [Tooltip("SpriteRenderer van de player. Laat leeg om automatisch een SpriteRenderer in de children te zoeken.")]
-    [SerializeField] private SpriteRenderer playerRenderer;
+    [Tooltip("PlayerMovement van de player. Laat leeg om automatisch te zoeken.")]
+    [SerializeField] private PlayerMovement playerMovement;
 
     [Tooltip("Hoeveel sorting orders de player achter de muur komt.")]
     [SerializeField] private int sortingOffset = 1;
-
-    private int normalSortingOrder;
 
 
     public Vector2 Center
@@ -33,6 +32,7 @@ public class RevealSource : MonoBehaviour
         }
     }
 
+
     public Vector2 Feet
     {
         get
@@ -40,6 +40,7 @@ public class RevealSource : MonoBehaviour
             return (Vector2)transform.position + feetOffset;
         }
     }
+
 
     public float Radius
     {
@@ -51,6 +52,7 @@ public class RevealSource : MonoBehaviour
             return matchLight.pointLightOuterRadius;
         }
     }
+
 
     public float Inner
     {
@@ -66,6 +68,7 @@ public class RevealSource : MonoBehaviour
                    );
         }
     }
+
 
     public float Falloff
     {
@@ -85,19 +88,16 @@ public class RevealSource : MonoBehaviour
 
     private void Awake()
     {
-        if (playerRenderer == null)
+        if (playerMovement == null)
         {
-            playerRenderer = GetComponentInChildren<SpriteRenderer>();
+            playerMovement =
+                GetComponentInParent<PlayerMovement>();
         }
 
-        if (playerRenderer != null)
-        {
-            normalSortingOrder = playerRenderer.sortingOrder;
-        }
-        else
+        if (playerMovement == null)
         {
             Debug.LogWarning(
-                $"RevealSource '{name}' heeft geen SpriteRenderer gevonden.",
+                $"RevealSource '{name}' heeft geen PlayerMovement gevonden.",
                 this
             );
         }
@@ -114,21 +114,24 @@ public class RevealSource : MonoBehaviour
 
     public void SetBehindWall(int wallSortingOrder)
     {
-        if (playerRenderer == null)
+        if (playerMovement == null)
             return;
 
-        playerRenderer.sortingOrder =
+        int playerSortingOrder =
             wallSortingOrder - sortingOffset;
+
+        playerMovement.SetRevealSorting(
+            playerSortingOrder
+        );
     }
 
 
     public void SetNormalSorting()
     {
-        if (playerRenderer == null)
+        if (playerMovement == null)
             return;
 
-        playerRenderer.sortingOrder =
-            normalSortingOrder;
+        playerMovement.ClearRevealSorting();
     }
 
 
@@ -141,6 +144,7 @@ public class RevealSource : MonoBehaviour
     private void OnDisable()
     {
         WallRevealManager.Unregister(this);
+
         SetNormalSorting();
     }
 
@@ -154,7 +158,8 @@ public class RevealSource : MonoBehaviour
             0.05f
         );
 
-        var manager = FindFirstObjectByType<WallRevealManager>();
+        var manager =
+            FindFirstObjectByType<WallRevealManager>();
 
         if (manager != null)
         {
