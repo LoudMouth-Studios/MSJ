@@ -8,6 +8,7 @@ using UnityEngine.Rendering.Universal;
 public class Spotlight : MonoBehaviour
 {
     [SerializeField] float fadeDuration = 0.5f;
+    [SerializeField] float startDelay = 0f;
     [SerializeField] bool fadeInOnStart = true;
 
     Light2D light2D;
@@ -25,8 +26,17 @@ public class Spotlight : MonoBehaviour
     {
         if (fadeInOnStart)
         {
-            FadeTo(fullIntensity, null);
+            fadeRoutine = StartCoroutine(DelayedFadeIn());
         }
+    }
+
+    IEnumerator DelayedFadeIn()
+    {
+        if (startDelay > 0f)
+        {
+            yield return new WaitForSecondsRealtime(startDelay);
+        }
+        yield return FadeRoutine(fullIntensity, null);
     }
 
     public void TurnOff(Action onComplete = null)
