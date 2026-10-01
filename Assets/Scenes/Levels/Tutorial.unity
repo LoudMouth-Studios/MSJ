@@ -3267,7 +3267,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1407754004}
   m_Father: {fileID: 712533256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -5863,7 +5864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WireCutMinigame
   minigamePanel: {fileID: 712533255}
   wireContainer: {fileID: 514893482}
-  wireText: {fileID: 0}
+  wireText: {fileID: 1407754005}
   wireButtonPrefab: {fileID: 8313893077977171001, guid: f8b6483f4aa3dd9438648b56b3994af9, type: 3}
   blueWire: {fileID: 7396234139072593398, guid: 30ffcf82fed325f4c98c172bac154840, type: 3}
   greenWire: {fileID: 850391159112886702, guid: bd79b47b832e95f4cba1f470b5e20d4f, type: 3}
@@ -5890,7 +5891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3669293621135457609, guid: 0ec12449b29c79445b77d67cfb81b053, type: 3}
+  m_Sprite: {fileID: -889248459412031385, guid: 9725f977b910183419cc231799c107b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31398,8 +31399,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  playerRenderer: {fileID: 0}
-  sortingOffset: 1
 --- !u!1 &1940903565
 GameObject:
   m_ObjectHideFlags: 0
@@ -32561,17 +32560,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2114139121}
   m_SourcePrefab: {fileID: 100100000, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
---- !u!114 &4194778526754800381 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8373792637744364468, guid: 21339ff16d723d24e8944d7ec216fc2a, type: 3}
-  m_PrefabInstance: {fileID: 4194778526754800380}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
 --- !u!1001 &5888716068831684628
 PrefabInstance:
   m_ObjectHideFlags: 0
