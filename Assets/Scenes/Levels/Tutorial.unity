@@ -8049,8 +8049,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 746190560}
   feetOffset: {x: 0, y: -0.58}
-  playerRenderer: {fileID: 0}
+  playerMovement: {fileID: 0}
   sortingOffset: 1
+  spriteRenderer: {fileID: 0}
 --- !u!1 &945283530
 GameObject:
   m_ObjectHideFlags: 0
@@ -8226,7 +8227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: https://twitch.tv/wesleynederpel
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebdee63a1b30bb64787986eda6f1640c, type: 2}
   m_sharedMaterial: {fileID: -2580971245370237570, guid: ebdee63a1b30bb64787986eda6f1640c, type: 2}
@@ -30836,9 +30837,13 @@ MonoBehaviour:
   dialogueText: {fileID: 962515646}
   dialogueButton: {fileID: 813008056}
   dialogueLines:
-  - text: My name is walter white yo
-  - text: and i am skyler white yo
-  - text: jesse pink man yo
+  - text: Name's Lester. Consider me the brains behind tonight's little operation.
+  - text: Keep your eyes peeled for the guards. Get spotted, and this whole job goes
+      south.
+  - text: Those lasers aren't exactly friendly either. Shut 'em down, then find the
+      light switch for the diamond.
+  - text: Grab the diamond, make yourself scarce, and get out clean. Easy money,
+      right?
   typingSpeed: 0.05
 --- !u!1 &1898005292
 GameObject:
@@ -32189,8 +32194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 576445633}
   feetOffset: {x: -0, y: -0.58}
-  playerRenderer: {fileID: 0}
+  playerMovement: {fileID: 0}
   sortingOffset: 1
+  spriteRenderer: {fileID: 0}
 --- !u!114 &1938651376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33224,8 +33230,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RevealSource
   matchLight: {fileID: 1821024464}
   feetOffset: {x: 0, y: -0.58}
-  playerRenderer: {fileID: 0}
+  playerMovement: {fileID: 0}
   sortingOffset: 1
+  spriteRenderer: {fileID: 0}
 --- !u!1 &2131554031
 GameObject:
   m_ObjectHideFlags: 0
