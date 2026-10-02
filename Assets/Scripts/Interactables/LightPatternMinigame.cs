@@ -11,6 +11,7 @@ public class LightPatternMinigame : MonoBehaviour
     [SerializeField] private GameObject minigamePanel;
     [SerializeField] private Transform switchContainer;
     [SerializeField] private TMP_Text attemptsText;
+    [SerializeField] private Button closeButton;
 
     [Header("Switch")]
     [SerializeField] private GameObject switchPrefab;
@@ -44,6 +45,12 @@ public class LightPatternMinigame : MonoBehaviour
 
         minigamePanel.SetActive(false);
 		GenerateRandomPattern();
+        
+        if (closeButton != null)
+        {
+            closeButton.onClick.RemoveAllListeners();
+            closeButton.onClick.AddListener(Close);
+        }
     }
 
     public void Open(JunctionBox junctionBox)
@@ -250,4 +257,13 @@ public class LightPatternMinigame : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
+    public void Close()
+    {
+        ClearSwitches();
+
+        minigamePanel.SetActive(false);
+
+        currentJunctionBox = null;
+    }
+   
 }
