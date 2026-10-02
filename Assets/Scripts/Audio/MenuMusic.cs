@@ -10,6 +10,7 @@ public class MenuMusic : MonoBehaviour
 
     private static MenuMusic instance;
     private AudioSource audioSource;
+    private float baseVolume;
 
     private void Awake()
     {
@@ -24,7 +25,9 @@ public class MenuMusic : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         audioSource = GetComponent<AudioSource>();
+        baseVolume = audioSource.volume;
         audioSource.loop = true;
+        ApplyVolume(VolumeManager.GetInstance().MusicVolume);
         if (!audioSource.isPlaying)
         {
             audioSource.Play();
@@ -34,11 +37,18 @@ public class MenuMusic : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        VolumeManager.OnMusicVolumeChanged += ApplyVolume;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        VolumeManager.OnMusicVolumeChanged -= ApplyVolume;
+    }
+
+    private void ApplyVolume(float musicVolume)
+    {
+        audioSource.volume = baseVolume * musicVolume;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

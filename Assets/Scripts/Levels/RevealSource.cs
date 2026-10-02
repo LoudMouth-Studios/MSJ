@@ -11,15 +11,19 @@ public class RevealSource : MonoBehaviour
     [Tooltip("Offset from this object's pivot to its feet.")]
     [SerializeField] private Vector2 feetOffset;
 
+
     [Header("Player Sorting")]
 
-    [Tooltip("SpriteRenderer van de player. Laat leeg om automatisch een SpriteRenderer in de children te zoeken.")]
-    [SerializeField] private SpriteRenderer playerRenderer;
+    [Tooltip("PlayerMovement van de player. Laat leeg om automatisch te zoeken.")]
+    [SerializeField] private PlayerMovement playerMovement;
 
     [Tooltip("Hoeveel sorting orders de player achter de muur komt.")]
     [SerializeField] private int sortingOffset = 1;
+    
+    [Tooltip("Voor objecten zonder PlayerMovement (bijv. guards). Laat leeg om automatisch te zoeken.")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
-    private int normalSortingOrder;
+    private int defaultSortingOrder;
 
 
     public Vector2 Center
@@ -33,6 +37,7 @@ public class RevealSource : MonoBehaviour
         }
     }
 
+
     public Vector2 Feet
     {
         get
@@ -40,6 +45,7 @@ public class RevealSource : MonoBehaviour
             return (Vector2)transform.position + feetOffset;
         }
     }
+
 
     public float Radius
     {
@@ -51,6 +57,7 @@ public class RevealSource : MonoBehaviour
             return matchLight.pointLightOuterRadius;
         }
     }
+
 
     public float Inner
     {
@@ -66,6 +73,7 @@ public class RevealSource : MonoBehaviour
                    );
         }
     }
+
 
     public float Falloff
     {
@@ -85,50 +93,61 @@ public class RevealSource : MonoBehaviour
 
     private void Awake()
     {
-        if (playerRenderer == null)
+        if (playerMovement == null)
         {
-            playerRenderer = GetComponentInChildren<SpriteRenderer>();
+            playerMovement =
+                GetComponentInParent<PlayerMovement>();
         }
 
-        if (playerRenderer != null)
+        if (playerMovement == null)
         {
-            normalSortingOrder = playerRenderer.sortingOrder;
-        }
-        else
-        {
-            Debug.LogWarning(
-                $"RevealSource '{name}' heeft geen SpriteRenderer gevonden.",
-                this
-            );
-        }
+            if (spriteRenderer == null)
+                spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
-        if (matchLight == null)
-        {
-            Debug.LogWarning(
-                $"RevealSource '{name}' heeft geen Light2D ingesteld.",
-                this
-            );
+            if (spriteRenderer == null)
+                spriteRenderer = GetComponentInParent<SpriteRenderer>();
+
+            if (spriteRenderer != null)
+            {
+                defaultSortingOrder = spriteRenderer.sortingOrder;
+            }
+            else
+            {
+                Debug.LogWarning(
+                    $"RevealSource '{name}' heeft geen PlayerMovement of SpriteRenderer gevonden.",
+                    this
+                );
+            }
         }
     }
 
 
     public void SetBehindWall(int wallSortingOrder)
     {
-        if (playerRenderer == null)
-            return;
-
-        playerRenderer.sortingOrder =
+        int sortingOrder =
             wallSortingOrder - sortingOffset;
+
+        if (playerMovement != null)
+        {
+            playerMovement.SetRevealSorting(sortingOrder);
+            return;
+        }
+
+        if (spriteRenderer != null)
+            spriteRenderer.sortingOrder = sortingOrder;
     }
 
 
     public void SetNormalSorting()
     {
-        if (playerRenderer == null)
+        if (playerMovement != null)
+        {
+            playerMovement.ClearRevealSorting();
             return;
+        }
 
-        playerRenderer.sortingOrder =
-            normalSortingOrder;
+        if (spriteRenderer != null)
+            spriteRenderer.sortingOrder = defaultSortingOrder;
     }
 
 
@@ -141,6 +160,7 @@ public class RevealSource : MonoBehaviour
     private void OnDisable()
     {
         WallRevealManager.Unregister(this);
+
         SetNormalSorting();
     }
 
@@ -154,7 +174,8 @@ public class RevealSource : MonoBehaviour
             0.05f
         );
 
-        var manager = FindFirstObjectByType<WallRevealManager>();
+        var manager =
+            FindFirstObjectByType<WallRevealManager>();
 
         if (manager != null)
         {

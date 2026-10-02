@@ -59,7 +59,7 @@ public class PlayerFootSteps : MonoBehaviour
 		{
 			distanceSinceLastStep %= distanceBetweenSteps;
 
-			audioSource.PlayOneShot(footstepClip, volume);
+			audioSource.PlayOneShot(footstepClip, volume * VolumeManager.GetInstance().SFXVolume);
 		}
 	}
 }

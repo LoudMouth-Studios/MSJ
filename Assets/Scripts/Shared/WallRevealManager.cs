@@ -8,16 +8,19 @@ public class WallRevealManager : MonoBehaviour
 
     private static readonly List<RevealSource> sources = new();
 
+
     public static void Register(RevealSource s)
     {
         if (!sources.Contains(s))
             sources.Add(s);
     }
 
+
     public static void Unregister(RevealSource s)
     {
         sources.Remove(s);
     }
+
 
     [Header("Wall Reveal")]
 
@@ -29,7 +32,9 @@ public class WallRevealManager : MonoBehaviour
 
     [SerializeField] private float fadeSpeed = 4f;
 
+
     public float WallHeight => wallHeight;
+
 
     private class Wall
     {
@@ -37,6 +42,7 @@ public class WallRevealManager : MonoBehaviour
         public readonly float[] strength = new float[Max];
         public bool inFront;
     }
+
 
     private static readonly int PointsId =
         Shader.PropertyToID("_RevealPoints");
@@ -53,19 +59,29 @@ public class WallRevealManager : MonoBehaviour
     private static readonly int WallBId =
         Shader.PropertyToID("_RevealWallB");
 
-    private readonly Vector4[] points = new Vector4[Max];
-    private readonly Vector4[] shape = new Vector4[Max];
 
-    private readonly List<Wall> walls = new();
+    private readonly Vector4[] points =
+        new Vector4[Max];
 
-    private readonly Dictionary<Collider2D, Wall> wallByCollider = new();
+    private readonly Vector4[] shape =
+        new Vector4[Max];
 
-    private readonly List<Collider2D> colliderBuffer = new();
+    private readonly List<Wall> walls =
+        new();
 
-    private readonly RaycastHit2D[] hits = new RaycastHit2D[32];
+    private readonly Dictionary<Collider2D, Wall> wallByCollider =
+        new();
+
+    private readonly List<Collider2D> colliderBuffer =
+        new();
+
+    private readonly RaycastHit2D[] hits =
+        new RaycastHit2D[32];
+
 
     private MaterialPropertyBlock block;
     private ContactFilter2D solidOnly;
+
 
     private void Awake()
     {
@@ -93,6 +109,7 @@ public class WallRevealManager : MonoBehaviour
             bool hasSolidCollider = false;
 
             colliderBuffer.Clear();
+
             r.GetComponents(colliderBuffer);
 
             foreach (Collider2D c in colliderBuffer)
@@ -114,43 +131,62 @@ public class WallRevealManager : MonoBehaviour
         }
     }
 
+
     private void Update()
     {
-        int n = Mathf.Min(sources.Count, Max);
-        float step = fadeSpeed * Time.deltaTime;
+        int n = Mathf.Min(
+            sources.Count,
+            Max
+        );
+
+        float step =
+            fadeSpeed *
+            Time.deltaTime;
+
 
         for (int i = 0; i < Max; i++)
         {
             if (i < n)
             {
-                RevealSource s = sources[i];
+                RevealSource source =
+                    sources[i];
 
-                Vector2 c = s.Center;
+                Vector2 center =
+                    source.Center;
 
-                points[i] = new Vector4(
-                    c.x,
-                    c.y,
-                    s.Radius,
-                    0f
-                );
+                points[i] =
+                    new Vector4(
+                        center.x,
+                        center.y,
+                        source.Radius,
+                        0f
+                    );
 
-                shape[i] = new Vector4(
-                    s.Inner,
-                    s.Falloff,
-                    0f,
-                    0f
-                );
+                shape[i] =
+                    new Vector4(
+                        source.Inner,
+                        source.Falloff,
+                        0f,
+                        0f
+                    );
 
-                Wall frontWall = MarkWallsInFront(s.Feet);
+                Wall frontWall =
+                    MarkWallsInFront(
+                        source.Feet
+                    );
 
                 if (frontWall != null)
                 {
-                    int wallOrder = frontWall.renderer.sortingOrder;
-                    s.SetBehindWall(wallOrder);
+                    int wallSortingOrder =
+                        frontWall.renderer.sortingOrder;
+
+                    source.SetBehindWall(
+                        wallSortingOrder
+                    );
                 }
                 else
                 {
-                    s.SetNormalSorting();
+                    source.SetNormalSorting();
                 }
             }
             else
@@ -159,17 +195,20 @@ public class WallRevealManager : MonoBehaviour
                 shape[i] = Vector4.zero;
             }
 
-            foreach (Wall w in walls)
-            {
-                w.strength[i] = Mathf.MoveTowards(
-                    w.strength[i],
-                    w.inFront ? 1f : 0f,
-                    step
-                );
 
-                w.inFront = false;
+            foreach (Wall wall in walls)
+            {
+                wall.strength[i] =
+                    Mathf.MoveTowards(
+                        wall.strength[i],
+                        wall.inFront ? 1f : 0f,
+                        step
+                    );
+
+                wall.inFront = false;
             }
         }
+
 
         Shader.SetGlobalVectorArray(
             PointsId,
@@ -186,69 +225,83 @@ public class WallRevealManager : MonoBehaviour
             n
         );
 
-        foreach (Wall w in walls)
-        {
-            float[] s = w.strength;
 
-            w.renderer.GetPropertyBlock(block);
+        foreach (Wall wall in walls)
+        {
+            float[] strength =
+                wall.strength;
+
+            wall.renderer.GetPropertyBlock(
+                block
+            );
 
             block.SetVector(
                 WallAId,
                 new Vector4(
-                    s[0],
-                    s[1],
-                    s[2],
-                    s[3]
+                    strength[0],
+                    strength[1],
+                    strength[2],
+                    strength[3]
                 )
             );
 
             block.SetVector(
                 WallBId,
                 new Vector4(
-                    s[4],
-                    s[5],
-                    s[6],
-                    s[7]
+                    strength[4],
+                    strength[5],
+                    strength[6],
+                    strength[7]
                 )
             );
 
-            w.renderer.SetPropertyBlock(block);
+            wall.renderer.SetPropertyBlock(
+                block
+            );
         }
     }
 
+
     private Wall MarkWallsInFront(Vector2 feet)
     {
-        int count = Physics2D.Raycast(
-            feet,
-            Vector2.down,
-            solidOnly,
-            hits,
-            wallHeight
-        );
+        int count =
+            Physics2D.Raycast(
+                feet,
+                Vector2.down,
+                solidOnly,
+                hits,
+                wallHeight
+            );
 
         Wall closestWall = null;
-        float closestDistance = float.MaxValue;
+        float closestDistance =
+            float.MaxValue;
+
 
         for (int h = 0; h < count; h++)
         {
             if (!wallByCollider.TryGetValue(
                     hits[h].collider,
-                    out Wall w))
+                    out Wall wall))
             {
                 continue;
             }
 
-            w.inFront = true;
+            wall.inFront = true;
 
             if (hits[h].distance < closestDistance)
             {
-                closestDistance = hits[h].distance;
-                closestWall = w;
+                closestDistance =
+                    hits[h].distance;
+
+                closestWall = wall;
             }
         }
 
+
         return closestWall;
     }
+
 
     private void OnDisable()
     {

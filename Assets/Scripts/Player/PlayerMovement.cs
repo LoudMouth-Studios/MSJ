@@ -10,26 +10,38 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private int sortbehind;
     [SerializeField] private int sortdefault;
-    
+
     [SerializeField] private PlayerFloor playerFloor;
-    
-    Rigidbody2D rb;
-    InputSystem_Actions controls;
-    Vector2 moveInput;
-    string lastDirection = "down";
-    string currentAnimation;
-    
-    
+
+    private Rigidbody2D rb;
+    private InputSystem_Actions controls;
+    private Vector2 moveInput;
+
+    private string lastDirection = "down";
+    private string currentAnimation;
+
+    private bool isBehindSortCollider;
+    private bool hasRevealSortingOverride;
+    private int revealSortingOrder;
+
 
     void Awake()
     {
-        sortdefault = _renderer.sortingOrder;
         rb = GetComponent<Rigidbody2D>();
         controls = new InputSystem_Actions();
 
+        if (_renderer == null)
+            _renderer = GetComponentInChildren<SpriteRenderer>();
+
         if (_animator == null)
             _animator = GetComponentInChildren<Animator>();
+
+        if (_renderer != null)
+            sortdefault = _renderer.sortingOrder;
+
+        UpdateSortingOrder();
     }
+
 
     void OnEnable()
     {
@@ -38,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         controls.Player.Move.canceled += OnMove;
     }
 
+
     void OnDisable()
     {
         controls.Player.Move.performed -= OnMove;
@@ -45,27 +58,29 @@ public class PlayerMovement : MonoBehaviour
         controls.Player.Disable();
     }
 
+
     void OnMove(InputAction.CallbackContext ctx)
     {
         moveInput = ctx.ReadValue<Vector2>();
         UpdateAnimation();
     }
 
+
     void FixedUpdate()
     {
-        if (GameManager.IsPaused) return;
-        
-        Vector2 delta = moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
-        rb.MovePosition(rb.position + delta);
-
-        if (moveInput == Vector2.zero)
-        {
-            UpdateAnimation();
+        if (GameManager.IsPaused)
             return;
-        }
+
+        Vector2 delta =
+            moveInput.normalized *
+            moveSpeed *
+            Time.fixedDeltaTime;
+
+        rb.MovePosition(rb.position + delta);
 
         UpdateAnimation();
     }
+
 
     void UpdateAnimation()
     {
@@ -82,13 +97,16 @@ public class PlayerMovement : MonoBehaviour
         PlayAnimation(RunAnimationFor(lastDirection));
     }
 
-    // Maps analog movement input to one of 8 compass directions.
+
     static string DirectionFromInput(Vector2 input)
     {
         float angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
-        if (angle < 0) angle += 360f;
+
+        if (angle < 0)
+            angle += 360f;
 
         int index = Mathf.RoundToInt(angle / 45f) % 8;
+
         switch (index)
         {
             case 0: return "right";
@@ -101,6 +119,7 @@ public class PlayerMovement : MonoBehaviour
             default: return "SE";
         }
     }
+
 
     static string IdleAnimationFor(string direction)
     {
@@ -117,6 +136,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
     static string RunAnimationFor(string direction)
     {
         switch (direction)
@@ -132,25 +152,85 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void BottomTriggerEnter(Collider2D other)
+
+    // =========================================================
+    // SORTING
+    // =========================================================
+
+    private void UpdateSortingOrder()
     {
-        if (other.CompareTag("sortcol") && (playerFloor.IsOnTopFloor == false))
+        if (_renderer == null)
+            return;
+
+        // Reveal wall heeft voorrang op de normale
+        // sorteerlogica van de player.
+        if (hasRevealSortingOverride)
+        {
+            _renderer.sortingOrder = revealSortingOrder;
+            return;
+        }
+
+        // Normale sortering op basis van sortcol.
+        if (isBehindSortCollider)
         {
             _renderer.sortingOrder = sortbehind;
         }
         else
         {
-            _renderer.sortingOrder = 13;
-        }
-    }
-
-    public void BottomTriggerExit(Collider2D other)
-    {
-        if (other.CompareTag("sortcol"))
-        {
             _renderer.sortingOrder = sortdefault;
         }
     }
+
+
+    public void SetRevealSorting(int sortingOrder)
+    {
+        hasRevealSortingOverride = true;
+        revealSortingOrder = sortingOrder;
+
+        UpdateSortingOrder();
+    }
+
+
+    public void ClearRevealSorting()
+    {
+        hasRevealSortingOverride = false;
+
+        UpdateSortingOrder();
+    }
+
+
+    public void BottomTriggerEnter(Collider2D other)
+    {
+        if (!other.CompareTag("sortcol"))
+            return;
+
+        if (playerFloor != null && !playerFloor.IsOnTopFloor)
+        {
+            Debug.unityLogger.Log("8");
+
+            isBehindSortCollider = true;
+        }
+        else
+        {
+            Debug.unityLogger.Log("13");
+
+            isBehindSortCollider = false;
+        }
+
+        UpdateSortingOrder();
+    }
+
+
+    public void BottomTriggerExit(Collider2D other)
+    {
+        if (!other.CompareTag("sortcol"))
+            return;
+
+        isBehindSortCollider = false;
+
+        UpdateSortingOrder();
+    }
+
 
     void PlayAnimation(string stateName)
     {

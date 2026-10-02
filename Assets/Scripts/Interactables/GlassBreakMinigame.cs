@@ -11,16 +11,17 @@ public class GlassBreakMinigame : MonoBehaviour
     [SerializeField] private Button glassButton;
     [SerializeField] private Button closeButton;
     [SerializeField] private TMP_Text tapCounter;
-    
+
     [Header("Glass Images")]
     [SerializeField] private GameObject glass1;
     [SerializeField] private GameObject glass2;
     [SerializeField] private GameObject glass3;
-    
+    [SerializeField] private GameObject glass4;
+
     [Header("Crack Thresholds")]
-   // [SerializeField] private int glass1Threshold = 5;
-    [SerializeField] private int glass2Threshold = 2;
-    [SerializeField] private int glass3Threshold = 4;
+    [SerializeField] private int glass1Threshold = 2;
+    [SerializeField] private int glass2Threshold = 10;
+    [SerializeField] private int glass3Threshold = 20;
 
     [Header("Glass Breaking")]
     [SerializeField] private int requiredTaps = 25;
@@ -60,6 +61,7 @@ public class GlassBreakMinigame : MonoBehaviour
         popup.SetActive(true);
 
         UpdateTapCounter();
+        UpdateGlassImage();
     }
 
     private void TapGlass()
@@ -74,6 +76,7 @@ public class GlassBreakMinigame : MonoBehaviour
             BreakGlass();
         }
     }
+
     private void UpdateGlassImage()
     {
         if (glass1 != null)
@@ -85,16 +88,28 @@ public class GlassBreakMinigame : MonoBehaviour
         if (glass3 != null)
             glass3.SetActive(false);
 
-        if (currentTaps < glass2Threshold)
+        if (glass4 != null)
+            glass4.SetActive(false);
+
+        
+        if (currentTaps < glass1Threshold)
+        {
+            if (glass4 != null)
+                glass4.SetActive(true);
+        }
+       
+        else if (currentTaps < glass2Threshold)
         {
             if (glass1 != null)
                 glass1.SetActive(true);
         }
+       
         else if (currentTaps < glass3Threshold)
         {
             if (glass2 != null)
                 glass2.SetActive(true);
         }
+        
         else
         {
             if (glass3 != null)

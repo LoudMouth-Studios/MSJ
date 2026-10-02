@@ -602,9 +602,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CompletionStars
   stars:
-  - {fileID: 74962360}
-  - {fileID: 1988613982}
   - {fileID: 1114100557}
+  - {fileID: 1988613982}
+  - {fileID: 74962360}
 --- !u!4 &504618997
 Transform:
   m_ObjectHideFlags: 0
@@ -1259,8 +1259,8 @@ RectTransform:
   m_LocalScale: {x: 0.018430034, y: 0.018430034, z: 0.018430034}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2110252933}
   - {fileID: 787101444}
+  - {fileID: 2110252933}
   m_Father: {fileID: 1493964764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
