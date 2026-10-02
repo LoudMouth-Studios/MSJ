@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private bool hasRevealSortingOverride;
     private int revealSortingOrder;
 
+    public bool IsOnTopFloor => playerFloor == null || playerFloor.IsOnTopFloor;
+
 
     void Awake()
     {
@@ -162,18 +164,16 @@ public class PlayerMovement : MonoBehaviour
         if (_renderer == null)
             return;
 
-        // Reveal wall heeft voorrang op de normale
-        // sorteerlogica van de player.
-        if (hasRevealSortingOverride)
-        {
-            _renderer.sortingOrder = revealSortingOrder;
-            return;
-        }
-
-        // Normale sortering op basis van sortcol.
+        // Explicit sortcol regions also cover solid props, so they must be
+        // able to place the player behind those props even when a reveal wall
+        // is nearby.
         if (isBehindSortCollider)
         {
             _renderer.sortingOrder = sortbehind;
+        }
+        else if (hasRevealSortingOverride)
+        {
+            _renderer.sortingOrder = revealSortingOrder;
         }
         else
         {
@@ -204,18 +204,7 @@ public class PlayerMovement : MonoBehaviour
         if (!other.CompareTag("sortcol"))
             return;
 
-        if (playerFloor != null && !playerFloor.IsOnTopFloor)
-        {
-            Debug.unityLogger.Log("8");
-
-            isBehindSortCollider = true;
-        }
-        else
-        {
-            Debug.unityLogger.Log("13");
-
-            isBehindSortCollider = false;
-        }
+        isBehindSortCollider = true;
 
         UpdateSortingOrder();
     }
