@@ -25,6 +25,9 @@ public class RevealSource : MonoBehaviour
 
     private int defaultSortingOrder;
 
+    public bool HasFloorInfo => playerMovement != null;
+    public bool IsOnTopFloor => playerMovement != null && playerMovement.IsOnTopFloor;
+
 
     public Vector2 Center
     {

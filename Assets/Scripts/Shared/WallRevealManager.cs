@@ -39,6 +39,7 @@ public class WallRevealManager : MonoBehaviour
     private class Wall
     {
         public TilemapRenderer renderer;
+        public WallRevealFloor floor;
         public readonly float[] strength = new float[Max];
         public bool inFront;
     }
@@ -101,7 +102,8 @@ public class WallRevealManager : MonoBehaviour
 
             var wall = new Wall
             {
-                renderer = r
+                renderer = r,
+                floor = r.GetComponent<WallRevealFloor>()
             };
 
             walls.Add(wall);
@@ -172,7 +174,9 @@ public class WallRevealManager : MonoBehaviour
 
                 Wall frontWall =
                     MarkWallsInFront(
-                        source.Feet
+                        source.Feet,
+                        source.HasFloorInfo,
+                        source.IsOnTopFloor
                     );
 
                 if (frontWall != null)
@@ -262,7 +266,11 @@ public class WallRevealManager : MonoBehaviour
     }
 
 
-    private Wall MarkWallsInFront(Vector2 feet)
+    private Wall MarkWallsInFront(
+        Vector2 feet,
+        bool hasFloorInfo,
+        bool playerOnTopFloor
+    )
     {
         int count =
             Physics2D.Raycast(
@@ -283,6 +291,13 @@ public class WallRevealManager : MonoBehaviour
             if (!wallByCollider.TryGetValue(
                     hits[h].collider,
                     out Wall wall))
+            {
+                continue;
+            }
+
+            // Top-floor walls remain revealable from either floor. Bottom-floor
+            // walls (without a marker) are hidden while the player is upstairs.
+            if (hasFloorInfo && wall.floor == null && playerOnTopFloor)
             {
                 continue;
             }
