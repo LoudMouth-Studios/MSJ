@@ -19,6 +19,9 @@ public class LightPatternMinigame : MonoBehaviour
     [SerializeField] private Sprite switchOnSprite;
     [SerializeField] private Sprite switchOffSprite;
 
+    [Header("Pattern")]
+    [SerializeField] private int patternLength = 5;
+
     [Header("Defeat")]
     [SerializeField] private string defeatSceneName = "Defeat";
 
@@ -40,6 +43,7 @@ public class LightPatternMinigame : MonoBehaviour
         Instance = this;
 
         minigamePanel.SetActive(false);
+		GenerateRandomPattern();
     }
 
     public void Open(JunctionBox junctionBox)
@@ -48,15 +52,6 @@ public class LightPatternMinigame : MonoBehaviour
             return;
 
         currentJunctionBox = junctionBox;
-        
-        correctPattern = new bool[]
-        {
-            true,
-            false,
-            true,
-            false,
-            false
-        };
 
         attempts = 0;
 
@@ -65,6 +60,39 @@ public class LightPatternMinigame : MonoBehaviour
         CreateSwitches();
 
         UpdateAttemptsText();
+    }
+
+    private void GenerateRandomPattern()
+    {
+        correctPattern = new bool[patternLength];
+
+        for (int i = 0; i < patternLength; i++)
+        {
+            correctPattern[i] = Random.Range(0, 2) == 1;
+        }
+
+        // Make sure the pattern isn't completely OFF
+        bool hasOnSwitch = false;
+
+        for (int i = 0; i < correctPattern.Length; i++)
+        {
+            if (correctPattern[i])
+            {
+                hasOnSwitch = true;
+                break;
+            }
+        }
+
+        if (!hasOnSwitch)
+        {
+            int randomIndex = Random.Range(0, correctPattern.Length);
+            correctPattern[randomIndex] = true;
+        }
+    }
+
+    public bool[] GetCurrentPattern()
+    {
+        return correctPattern;
     }
 
     private void CreateSwitches()

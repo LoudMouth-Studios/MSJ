@@ -2,27 +2,27 @@ using UnityEngine;
 
 public class LightPatternNote : MonoBehaviour, IInteractable
 {
-    [SerializeField] private bool[] correctPattern =
-    {
-        true,
-        false,
-        true,
-        false,
-        false
-    };
-
     public bool CanInteract => true;
-
-    public bool[] GetPattern()
-    {
-        return correctPattern;
-    }
 
     public void Interact()
     {
+        if (LightPatternMinigame.Instance == null)
+        {
+            Debug.LogWarning("LightPatternMinigame is missing from the scene.");
+            return;
+        }
+
+        bool[] pattern = LightPatternMinigame.Instance.GetCurrentPattern();
+
+        if (pattern == null)
+        {
+            Debug.LogWarning("No light pattern has been generated yet.");
+            return;
+        }
+
         if (LightPatternNotePopup.Instance != null)
         {
-            LightPatternNotePopup.Instance.Open(correctPattern);
+            LightPatternNotePopup.Instance.Open(pattern);
         }
     }
 }
