@@ -602,9 +602,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CompletionStars
   stars:
-  - {fileID: 74962360}
-  - {fileID: 1988613982}
   - {fileID: 1114100557}
+  - {fileID: 1988613982}
+  - {fileID: 74962360}
 --- !u!4 &504618997
 Transform:
   m_ObjectHideFlags: 0
