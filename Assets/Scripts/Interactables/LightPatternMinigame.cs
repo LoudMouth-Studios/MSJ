@@ -223,8 +223,15 @@ public class LightPatternMinigame : MonoBehaviour
 
     private void Defeat()
     {
-        currentJunctionBox = null;
+        if (GameManager.CheatsEnabled)
+        {
+            attempts = 0;          // reset mistakes and let the player try again
+            UpdateAttemptsText();
+            ResetSwitches();
+            return;
+        }
 
+        currentJunctionBox = null;
         SceneManager.LoadScene(defeatSceneName);
     }
 

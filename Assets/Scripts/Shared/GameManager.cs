@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     string currentLevelName;
     public bool HasDiamond { get; private set; }
     public static bool IsPaused { get; set; }
+    public static bool CheatsEnabled { get; set; }
     public int LastLevelStars { get; private set; }
 
     void Awake()
@@ -45,6 +46,12 @@ public class GameManager : MonoBehaviour
     
     public void TriggerDefeat()
     {
+        if (CheatsEnabled)
+        {
+            Debug.Log("Cheats on: defeat ignored");
+            return;
+        }
+
         currentLevelName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("Defeat");
     }

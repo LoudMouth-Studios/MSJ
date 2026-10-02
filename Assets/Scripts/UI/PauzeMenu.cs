@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class PauzeMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuPanel;
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
+    [SerializeField] private Button cheatButton;
+    [SerializeField] private TMP_Text cheatButtonText;
 
     private bool isPaused;
 
@@ -26,6 +29,22 @@ public class PauzeMenu : MonoBehaviour
             sfxSlider.SetValueWithoutNotify(VolumeManager.GetInstance().SFXVolume);
             sfxSlider.onValueChanged.AddListener(VolumeManager.GetInstance().SetSFXVolume);
         }
+        
+        if (cheatButton != null)
+            cheatButton.onClick.AddListener(ToggleCheats);
+        UpdateCheatText();
+    }
+
+    public void ToggleCheats()
+    {
+        GameManager.CheatsEnabled = !GameManager.CheatsEnabled;
+        UpdateCheatText();
+    }
+
+    private void UpdateCheatText()
+    {
+        if (cheatButtonText != null)
+            cheatButtonText.text = GameManager.CheatsEnabled ? "Cheats: ON" : "Cheats: OFF";
     }
 
     void Update()

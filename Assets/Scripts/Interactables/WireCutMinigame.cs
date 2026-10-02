@@ -158,8 +158,10 @@ public class WireCutMinigame : MonoBehaviour
     {
         if (triesLeft == 0)
         {
-            currentPower = null;
+            if (GameManager.CheatsEnabled)
+                return;            // out of tries, but with cheats on you can keep trying
 
+            currentPower = null;
             SceneManager.LoadScene(defeatSceneName);
         }
         else
