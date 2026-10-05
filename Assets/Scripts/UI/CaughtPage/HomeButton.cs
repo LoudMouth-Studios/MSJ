@@ -7,5 +7,8 @@ public class HomeButton : MonoBehaviour
     {
         Debug.Log("Home button clicked.");
         SceneManager.LoadScene("HomeScreen");
+        Time.timeScale = 1f;
+        GameManager.IsPaused = false;
+        SceneManager.LoadScene("HomeScreen");
     }
 }
