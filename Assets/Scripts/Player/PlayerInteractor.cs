@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Keeps a list of interactables in range. The interact button uses the first one that can be used right now.
 public class PlayerInteractor : MonoBehaviour
 {
     readonly List<IInteractable> targetsInRange = new List<IInteractable>();

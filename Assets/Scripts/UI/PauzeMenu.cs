@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 
+// Pause menu: Escape (or the pause button) pauses the game. Contains the volume sliders and the cheat toggle.
 public class PauzeMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuPanel;
@@ -63,7 +64,6 @@ public class PauzeMenu : MonoBehaviour
         isPaused = true;
         GameManager.IsPaused = true;
         Time.timeScale = 0f;
-        Debug.Log("Game paused");
 
         if (pauseMenuPanel != null)
             pauseMenuPanel.SetActive(true);
@@ -74,16 +74,8 @@ public class PauzeMenu : MonoBehaviour
         isPaused = false;
         GameManager.IsPaused = false;
         Time.timeScale = 1f;
-        Debug.Log("Game resumed");
 
         if (pauseMenuPanel != null)
             pauseMenuPanel.SetActive(false);
-    }
-
-    public void QuitToMenu()
-    {
-        Time.timeScale = 1f;
-        GameManager.IsPaused = false;
-        GameManager.Instance.StartScreen();
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 
+// Level stopwatch shown in the HUD. The finish time decides the star rating (0-3).
 public class LevelTimer : MonoBehaviour
 {
     [Header("UI")]
@@ -17,8 +18,6 @@ public class LevelTimer : MonoBehaviour
     private bool isRunning = false;
 
     public int CurrentStars { get; private set; } = 0;
-
-    public float ElapsedTime => elapsedTime;
 
     private void Start()
     {
@@ -46,8 +45,6 @@ public class LevelTimer : MonoBehaviour
         startTime = Time.time;
         elapsedTime = 0f;
         isRunning = true;
-
-        Debug.Log("Level timer started!");
     }
 
     public int StopTimer()
@@ -61,13 +58,6 @@ public class LevelTimer : MonoBehaviour
         CurrentStars = CalculateStars(elapsedTime);
 
         UpdateTimerDisplay();
-
-        Debug.Log(
-            "Level completed in " +
-            elapsedTime.ToString("F2") +
-            " seconds. Stars: " +
-            CurrentStars
-        );
 
         return CurrentStars;
     }
@@ -92,11 +82,40 @@ public class LevelTimer : MonoBehaviour
         return 0;
     }
 
+    // Reused buffer for the timer text. It changes every frame, and SetCharArray updates the
+    // text without creating a new string each frame (no garbage collection stutter on mobile).
+    private readonly char[] timerChars = new char[16];
+
     private void UpdateTimerDisplay()
     {
-        int minutes = Mathf.FloorToInt(elapsedTime / 60f);
-        float seconds = elapsedTime % 60f;
+        // Format "mm:ss.ff", built from whole hundredths so it can never show "00:60.00".
+        int totalHundredths = Mathf.RoundToInt(elapsedTime * 100f);
+        int minutes = totalHundredths / 6000;
+        int seconds = (totalHundredths / 100) % 60;
+        int hundredths = totalHundredths % 100;
 
-        timerText.text = $"{minutes:00}:{seconds:00.00}";
+        int length = WriteNumber(minutes, 0);
+        timerChars[length++] = ':';
+        length = WriteNumber(seconds, length);
+        timerChars[length++] = '.';
+        length = WriteNumber(hundredths, length);
+
+        timerText.SetCharArray(timerChars, 0, length);
+    }
+
+    // Writes value with at least 2 digits (leading zero) into timerChars at 'start'; returns the next free index.
+    private int WriteNumber(int value, int start)
+    {
+        int digits = 2;
+        for (int v = value; v >= 100; v /= 10)
+            digits++;
+
+        for (int i = digits - 1; i >= 0; i--)
+        {
+            timerChars[start + i] = (char)('0' + value % 10);
+            value /= 10;
+        }
+
+        return start + digits;
     }
 }

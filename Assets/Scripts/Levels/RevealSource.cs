@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
+// A character (player or guard) that makes walls in front of it see-through, using the radius
+// of its light. WallRevealManager also sorts the character behind the wall it stands behind.
 public class RevealSource : MonoBehaviour
 {
     [Header("Reveal Light")]

@@ -48,6 +48,19 @@ public class VolumeManager : MonoBehaviour
         OnMusicVolumeChanged?.Invoke(value);
     }
 
+    // PlayerPrefs are only written to disk automatically on a clean quit. On mobile the OS can
+    // kill a backgrounded app without quitting, so settings are also saved when the app is paused.
+    void OnApplicationPause(bool paused)
+    {
+        if (paused)
+            PlayerPrefs.Save();
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.Save();
+    }
+
     public void SetSFXVolume(float value)
     {
         SFXVolume = value;

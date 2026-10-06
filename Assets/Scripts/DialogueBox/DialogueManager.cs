@@ -3,11 +3,12 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
+// Shows dialogue lines one by one with a typewriter effect. The dialogue button
+// finishes the line that is being typed, or goes to the next line.
 public class DialogueManager : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField] private GameObject dialogueBox;
-    [SerializeField] private Image profilePicture;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private Button dialogueButton;
 
@@ -21,6 +22,10 @@ public class DialogueManager : MonoBehaviour
 
     private Coroutine typingCoroutine;
     private bool isTyping = false;
+
+    // Cached so the typewriter doesn't allocate a new WaitForSeconds for every letter.
+    private WaitForSeconds typingWait;
+    private float typingWaitDuration = -1f;
 
     private void Start()
     {
@@ -43,8 +48,6 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueLine line = dialogueLines[currentLine];
 
-        // profilePicture.sprite = line.portrait;
-
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
@@ -63,10 +66,22 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
 
-            yield return new WaitForSeconds(typingSpeed);
+            yield return GetTypingWait();
         }
 
         isTyping = false;
+    }
+
+    // Rebuilds the cached wait only when typingSpeed changed (e.g. tweaked in the Inspector during Play).
+    private WaitForSeconds GetTypingWait()
+    {
+        if (typingWait == null || typingWaitDuration != typingSpeed)
+        {
+            typingWait = new WaitForSeconds(typingSpeed);
+            typingWaitDuration = typingSpeed;
+        }
+
+        return typingWait;
     }
 
     public void NextLine()

@@ -1,7 +1,8 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Top-down movement in 8 directions with matching run/idle animations, and the player's
+// sorting order (drawn behind props and see-through walls when standing behind them).
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {

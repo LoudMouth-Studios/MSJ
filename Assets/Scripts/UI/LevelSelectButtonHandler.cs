@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Level Select button: zooms into the clicked button and loads its level.
 public class LevelSelectButtonHandler : MonoBehaviour
 {
     [SerializeField] float zoomScale = 4f;
@@ -19,6 +20,7 @@ public class LevelSelectButtonHandler : MonoBehaviour
 
     void StartTransition(string sceneName)
     {
+        // Disabled right away so the button can't be clicked twice.
         var button = GetComponent<Button>();
         if (button != null)
         {

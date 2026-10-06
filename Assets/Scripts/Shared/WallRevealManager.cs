@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+// Makes walls (tilemaps that use revealMaterial) see-through where a RevealSource stands behind them.
+// Every frame it sends up to 8 reveal circles to the wall shader and fades each wall in or out per source.
 public class WallRevealManager : MonoBehaviour
 {
     private const int Max = 8;
@@ -148,6 +150,7 @@ public class WallRevealManager : MonoBehaviour
 
         for (int i = 0; i < Max; i++)
         {
+            // Unused slots are cleared so the shader ignores them.
             if (i < n)
             {
                 RevealSource source =
@@ -200,6 +203,7 @@ public class WallRevealManager : MonoBehaviour
             }
 
 
+            // Fade this source's reveal on every wall towards 1 (wall in front) or 0.
             foreach (Wall wall in walls)
             {
                 wall.strength[i] =
@@ -266,6 +270,8 @@ public class WallRevealManager : MonoBehaviour
     }
 
 
+    // Casts a ray down from the feet: walls hit within wallHeight are in front of the character.
+    // Returns the closest one, which decides the character's sorting order.
     private Wall MarkWallsInFront(
         Vector2 feet,
         bool hasFloorInfo,

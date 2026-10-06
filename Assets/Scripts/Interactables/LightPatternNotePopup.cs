@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Popup that draws the light pattern from the note as on/off switches.
 public class LightPatternNotePopup : MonoBehaviour
 {
     public static LightPatternNotePopup Instance { get; private set; }

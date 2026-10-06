@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Power box: opens the wire-cutting minigame. Once it's solved, the linked diamond lights turn off.
 public class PowerInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject[] diamondLights;

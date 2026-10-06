@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Plays a footstep sound every 'distanceBetweenSteps' units the player moves, at the SFX volume.
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerFootSteps : MonoBehaviour
 {

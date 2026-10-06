@@ -11,6 +11,10 @@ public class SceneTransitionManager : MonoBehaviour
     CanvasGroup fadeCanvasGroup;
     float lastFadeDuration = 0.3f;
 
+    // True from the moment a transition starts until the new scene has loaded,
+    // so a double tap can't start a second transition.
+    bool isTransitioning;
+
     public static SceneTransitionManager GetInstance()
     {
         if (Instance == null)
@@ -60,6 +64,10 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void LoadSceneWithZoom(string sceneName, RectTransform zoomTarget, float zoomScale = 4f, float zoomDuration = 0.45f, float fadeDuration = 0.3f)
     {
+        if (isTransitioning)
+            return;
+
+        isTransitioning = true;
         StartCoroutine(TransitionRoutine(sceneName, zoomTarget, zoomScale, zoomDuration, fadeDuration));
     }
 
@@ -148,6 +156,7 @@ public class SceneTransitionManager : MonoBehaviour
     void OnSceneLoadedFadeIn(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoadedFadeIn;
+        isTransitioning = false; // input stays blocked by the fade overlay until the fade-in ends
         StartCoroutine(FadeInAfterLoad());
     }
 

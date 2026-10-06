@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Switch puzzle: set the switches to the pattern shown on the note (LightPatternNote).
+// Three wrong attempts means defeat.
 public class LightPatternMinigame : MonoBehaviour
 {
     public static LightPatternMinigame Instance { get; private set; }
@@ -44,7 +46,9 @@ public class LightPatternMinigame : MonoBehaviour
         Instance = this;
 
         minigamePanel.SetActive(false);
-		GenerateRandomPattern();
+
+        // Generated once per level, so the note and the minigame always use the same pattern.
+        GenerateRandomPattern();
         
         if (closeButton != null)
         {
@@ -239,7 +243,16 @@ public class LightPatternMinigame : MonoBehaviour
         }
 
         currentJunctionBox = null;
-        SceneManager.LoadScene(defeatSceneName);
+        LoadDefeat();
+    }
+
+    // Defeat goes through GameManager so it remembers which level to restart.
+    private void LoadDefeat()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.TriggerDefeat();
+        else
+            SceneManager.LoadScene(defeatSceneName); // fallback: scene tested without a GameManager
     }
 
     private void UpdateAttemptsText()

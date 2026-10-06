@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal; // Light2D lives here
 
+// The guard's flashlight and detection. The player is caught when a point on their feet is
+// inside the view cone and no obstacle of the player's current floor is in between.
 public class GuardVision : MonoBehaviour
 {
     [Header("Cone Shape")]
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float viewAngle = 70f;       // full cone angle, in degrees
-    [SerializeField] LayerMask obstacleMask;      // still used by the detection raycast below
 
     [Header("Flashlight")]
     [SerializeField] Color flashlightColor = new Color(1f, 0.92f, 0.75f, 1f);
@@ -26,9 +27,6 @@ public class GuardVision : MonoBehaviour
     [SerializeField] LayerMask topFloorObstacles;    // obstacles that hide the player on the top floor
     [SerializeField] LayerMask bottomFloorObstacles; // obstacles that hide the player on the bottom floor
     [SerializeField] bool checkFeetEdges = true;     // also test left/right edge of the player's feet
-
-    [Header("Target")]
-    [SerializeField] Transform target;            // drag the Player here
 
     Light2D flashlight;
     Collider2D guardFeet;
@@ -57,8 +55,8 @@ public class GuardVision : MonoBehaviour
         flashlight.color = flashlightColor;
         flashlight.intensity = intensity;
 
-        // outerAngle is tied to viewAngle on purpose: the beam's edge
-        // is always exactly where detection stops. No more drift like GuardUp had.
+        // The light cone uses the same angle and distance as detection,
+        // so the edge of the beam is exactly where the guard stops seeing.
         flashlight.pointLightOuterAngle = viewAngle;
         flashlight.pointLightInnerAngle = viewAngle * innerAngleRatio;
         flashlight.pointLightOuterRadius = viewDistance;

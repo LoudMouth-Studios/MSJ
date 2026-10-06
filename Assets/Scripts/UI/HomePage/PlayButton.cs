@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Home screen Play button: fades the spotlight out, then transitions to Level Select.
 public class PlayButton : MonoBehaviour
 {
     [SerializeField] Spotlight spotlight;
@@ -15,8 +16,6 @@ public class PlayButton : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
-        Debug.Log("Play button clicked, switching to Level Select scene.");
-
         if (spotlight != null)
         {
             spotlight.TurnOff(LoadLevelSelect);

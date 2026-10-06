@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+// Wire minigame: cut the wire named in the text. The name is printed in a different colour
+// to mislead the player. Two mistakes are allowed; the third wrong wire means defeat.
 public class WireCutMinigame : MonoBehaviour
 {
     public static WireCutMinigame Instance { get; private set; }
@@ -162,12 +164,21 @@ public class WireCutMinigame : MonoBehaviour
                 return;            // out of tries, but with cheats on you can keep trying
 
             currentPower = null;
-            SceneManager.LoadScene(defeatSceneName);
+            LoadDefeat();
         }
         else
         {
             triesLeft--;
         }
+    }
+
+    // Defeat goes through GameManager so it remembers which level to restart.
+    private void LoadDefeat()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.TriggerDefeat();
+        else
+            SceneManager.LoadScene(defeatSceneName); // fallback: scene tested without a GameManager
     }
 
     private void ClearWires()

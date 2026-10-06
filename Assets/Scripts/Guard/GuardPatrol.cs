@@ -1,6 +1,7 @@
-using System.Security.Cryptography;
 using UnityEngine;
 
+// Loop: after the last waypoint the guard walks back to the first one.
+// PingPong: the guard walks the route back and forth.
 public enum PatrolMode { Loop, PingPong }
 
 [System.Serializable]
@@ -10,6 +11,8 @@ public class TurnPoint
     [Range(0f, 100f)] public float turnChance = 50f; // % chance to turn around here
 }
 
+// Walks a guard along its waypoints, waits briefly at each point and can randomly
+// turn around at turn points. Also plays the matching walk animation.
 [RequireComponent(typeof(Rigidbody2D))]
 public class GuardPatrol : MonoBehaviour
 {
@@ -19,7 +22,7 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] float moveSpeed = 2f;
     [SerializeField] float waypointTolerance = 0.05f;
     [SerializeField] float waitTimeAtPoint = 0.5f;
-    [SerializeField] GuardVision vision; // optional, wired in Step 5
+    [SerializeField] GuardVision vision; // optional: receives the walking direction to aim the flashlight
     [SerializeField] Animator animator;
     
     [Header("Turn-around Points")]

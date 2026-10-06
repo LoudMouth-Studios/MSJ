@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Level intro: a separate camera pans over the level while gameplay is paused. When the pan
+// animation ends, control switches to the gameplay camera, the HUD appears and the dialogue starts.
 public class IntroCameraSequence : MonoBehaviour
 {
     [Header("This object's own camera (auto-filled)")]

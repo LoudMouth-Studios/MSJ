@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Shows on the Complete screen as many stars as the finished level earned.
 public class CompletionStars : MonoBehaviour
 {
     [SerializeField] private Image[] stars;

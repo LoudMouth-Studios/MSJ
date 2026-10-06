@@ -1,10 +1,10 @@
 using UnityEngine;
 
+// Defeat screen button: replays the level the player lost.
 public class RestartButtonHandler : MonoBehaviour
 {
     public void OnRestartClicked()
     {
-        Debug.Log("restart button clicked.");
         GameManager.Instance.RestartLevel();
     }
 }

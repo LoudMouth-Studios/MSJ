@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// The diamond: interacting opens the glass-breaking minigame, which calls Collect() when the glass breaks.
 public class Diamond : MonoBehaviour, IInteractable
 {
     private bool collected;

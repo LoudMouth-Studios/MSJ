@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Note in the level that shows the solution for the light-pattern minigame.
 public class LightPatternNote : MonoBehaviour, IInteractable
 {
     public bool CanInteract => true;

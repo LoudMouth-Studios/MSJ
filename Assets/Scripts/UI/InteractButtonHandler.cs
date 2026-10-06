@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// On-screen interact button. Only clickable while something usable is in range.
 public class InteractButtonHandler : MonoBehaviour
 {
     [SerializeField] PlayerInteractor interactor;

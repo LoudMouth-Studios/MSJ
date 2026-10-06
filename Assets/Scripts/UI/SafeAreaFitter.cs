@@ -1,6 +1,7 @@
 using UnityEngine;
 
-// Production SafeAreaFitter (Rotation & Notch Aware):
+// Fits this RectTransform inside the device's safe area (notches, punch-hole cameras, rounded
+// corners) and updates it when the safe area changes, for example after rotating the device.
 [RequireComponent(typeof(RectTransform))]
 public class SafeAreaFitter : MonoBehaviour {
     private RectTransform _rt;

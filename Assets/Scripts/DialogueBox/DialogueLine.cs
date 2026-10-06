@@ -1,12 +1,9 @@
 using UnityEngine;
 
+// One line of dialogue, filled in on the DialogueManager in the Inspector.
 [System.Serializable]
 public class DialogueLine
 {
-    // public string characterName;
-    //
-    // public Sprite portrait;
-
     [TextArea(2, 5)]
     public string text;
 }

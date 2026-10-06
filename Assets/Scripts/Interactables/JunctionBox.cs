@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Opens the light-pattern minigame. Once it's solved, the linked diamond lights turn off.
 public class JunctionBox : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject[] diamondLights;

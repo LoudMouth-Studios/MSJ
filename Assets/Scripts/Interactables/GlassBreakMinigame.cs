@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Tap minigame to break the glass around the diamond. The glass image cracks further at each
+// threshold, and the diamond is collected after 'requiredTaps' taps.
 public class GlassBreakMinigame : MonoBehaviour
 {
     public static GlassBreakMinigame Instance { get; private set; }
@@ -127,8 +129,6 @@ public class GlassBreakMinigame : MonoBehaviour
 
     private void BreakGlass()
     {
-        Debug.Log("Glass broken!");
-
         if (currentDiamond != null)
         {
             currentDiamond.Collect();

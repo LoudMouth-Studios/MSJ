@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Tracks whether the player is on the top or bottom floor by putting the player's collision
+// object on the matching physics layer, so it only collides with that floor's walls.
 public class PlayerFloor : MonoBehaviour
 {
     public bool IsOnTopFloor => playerCollision.layer == topLayer;
@@ -17,20 +19,13 @@ public class PlayerFloor : MonoBehaviour
         SetTopFloor();
     }
 
+    // Floor triggers sit on the stairs: walking through one moves the player to that floor.
     private void OnTriggerEnter2D(Collider2D other)
     {
-   
-        
         if (other.CompareTag("TopTrigger"))
-        {
-            Debug.unityLogger.Log("Top");
             SetTopFloor();
-        }
         else if (other.CompareTag("BottomTrigger"))
-        {
-            Debug.unityLogger.Log("Bottom");
             SetBottomFloor();
-        }
     }
 
     private void SetTopFloor()
